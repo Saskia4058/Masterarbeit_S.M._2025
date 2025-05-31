@@ -6140,11 +6140,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 652964172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77565f72779feb640a8912a0d042807d, type: 3}
+  m_Script: {fileID: 11500000, guid: f88ff4557e29f72468f1222637fb845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   multiSelectButtons: {fileID: 1032467435}
-  buttonEBA: {fileID: 1837643170}
+  buttonEFZ: {fileID: 1927199448}
+  buttonBM1: {fileID: 2142286099}
+  buttonFH: {fileID: 550051459}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -6480,8 +6482,7 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips:
-  - {fileID: 8300000, guid: db248a93294452d42b19c3b8e3c2677a, type: 3}
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -13673,9 +13674,7 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips:
-  - {fileID: 8300000, guid: def848d182ea5804f88f3d0515a0af9c, type: 3}
-  - {fileID: 8300000, guid: f732d80aa3f9876418e44b3c55c659d0, type: 3}
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -18266,25 +18265,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784188815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b04e51c4d17991459db11c7aff78d28, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f85b38b53ec3ae47a507a238803a8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - "Die richtige Antwort ist eidgen\xF6ssisches Berufsattest EBA."
-  - "Das ist ein Abschluss nach einer 2-j\xE4hrigen Lehre."
-  - In der EBA-Lehre lernst du alles Wichtige zum Arbeiten in einem Beruf mit einfachen
-    Anforderungen.
-  - Sie richtet sich an Personen mit schulischen Schwierigkeiten.
-  - Nach einer EBA-Lehre kannst du eine EFZ-Lehre machen.
-  - Es gibt 60 Berufe mit EBA, die du nach der Schule erlernen kannst.
-  audioClips:
-  - {fileID: 8300000, guid: 3c576a3418fd3f945aa2a044483d2c64, type: 3}
-  - {fileID: 8300000, guid: 2815ddde6ba1a354f9913cb948a56ab9, type: 3}
-  - {fileID: 8300000, guid: f7ca1fe0573d7974e8b2b28c8840c18e, type: 3}
-  - {fileID: 8300000, guid: 5a966d63ef375954b98838c2e035a8cf, type: 3}
-  - {fileID: 8300000, guid: f074c78df1f451c4d9ee3ea3d387d95b, type: 3}
-  - {fileID: 8300000, guid: 8764ce5946eddd94294815655e34b2d6, type: 3}
+  - Die Antwort ist ja!
+  - Du kannst eine EFZ-Lehre mit Berufsmatur machen.
+  - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule FH studieren."
+  - "Du kannst sie w\xE4hrend der Lehre machen - BM1 - oder nach der Lehre - BM2."
+  - Es gibt 5 Ausrichtungen.
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -18590,7 +18581,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831142314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f8325d5b88c65c41b1ffebfe2d0d934, type: 3}
+  m_Script: {fileID: 11500000, guid: 323349ab760ab244c98fb1ff850881b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonWeiter: {fileID: 120927511}
@@ -19798,18 +19789,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hey, ich bin Samira.
-  - "Ich m\xF6chte nach der Schule einen Beruf lernen - mein Traumberuf ist Schreinerin
-    EFZ."
-  - "In der Schule habe ich etwas M\xFChe. "
-  - "Ist es m\xF6glich, zuerst einen anderen Abschluss zu machen?"
-  - Und danach die Lehre als Schreinerin EFZ zu beginnen?
-  audioClips:
-  - {fileID: 8300000, guid: 29d48061cacac3347a21690ae0fbb1a9, type: 3}
-  - {fileID: 8300000, guid: 0a61053739375d940ad2e26c489291e8, type: 3}
-  - {fileID: 8300000, guid: f46da162b977e434094dd905f12c15b4, type: 3}
-  - {fileID: 8300000, guid: 09c4ea4b86bf763498e1ee4a1785fc12, type: 3}
-  - {fileID: 8300000, guid: b6627a528b2d8bc448e6f4de959e54e8, type: 3}
+  - Hallo, ich bin Ben.
+  - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
+  - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
+  - "Daf\xFCr brauche ich eine Matur."
+  - Kann ich eine Lehre mit Matura machen?
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -21109,9 +21094,7 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips:
-  - {fileID: 8300000, guid: 0b18528bb9aabd34fb8607f78ae63563, type: 3}
-  - {fileID: 8300000, guid: 12c3276ab86d07340a580a28302fec3f, type: 3}
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

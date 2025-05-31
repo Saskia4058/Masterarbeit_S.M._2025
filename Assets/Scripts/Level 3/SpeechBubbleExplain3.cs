@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SpeechBubbleExplain2 : MonoBehaviour
+public class SpeechBubbleExplain3 : MonoBehaviour
 {
     public TextMeshProUGUI dialogText;
 
@@ -153,7 +153,7 @@ public class SpeechBubbleExplain2 : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("Level 3"); // Neue Scene laden
+        SceneManager.LoadScene("Level 4"); // Neue Scene laden
     }
 
     void OnDisable() // Sicherheit: Audio stoppen, wenn Bubble deaktiviert wird
