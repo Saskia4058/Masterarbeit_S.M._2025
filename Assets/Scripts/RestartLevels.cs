@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RestartLevel1 : MonoBehaviour
+public class RestartLevels : MonoBehaviour
 {
     public Button buttonWeiter;
 
@@ -20,6 +20,12 @@ public class RestartLevel1 : MonoBehaviour
 
     void ReloadLevel()
     {
-        SceneManager.LoadScene("Level 1");
+        string currentLevel = SceneManager.GetActiveScene().name;
+
+        // Markiere dieses Level als "bereits neu gestartet"
+        LevelRestartTracker.MarkLevelRestarted(currentLevel);
+
+        // Lade das aktuelle Level neu
+        SceneManager.LoadScene(currentLevel);
     }
 }
