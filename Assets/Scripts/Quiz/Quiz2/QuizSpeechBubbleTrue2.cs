@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.SceneManagement; // <-- NEU hinzugefügt
 
-public class QuizSpeechBubbleFalse : MonoBehaviour
+public class QuizSpeechBubbleTrue2 : MonoBehaviour
 {
     public TextMeshProUGUI dialogText;
 
@@ -140,7 +140,7 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
 
     private void OnWeiterButtonClicked()
     {
-        SceneManager.LoadScene("Quiz 2");
+        SceneManager.LoadScene("Quiz 3"); // <-- ANPASSUNG: Szene "Quiz2" laden
     }
 
     void OnDisable()

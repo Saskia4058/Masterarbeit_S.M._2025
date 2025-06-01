@@ -140,7 +140,7 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
 
     private void OnWeiterButtonClicked()
     {
-        SceneManager.LoadScene("Rank"); // <-- ANPASSUNG: Szene "Quiz2" laden
+        SceneManager.LoadScene("Quiz 2"); // <-- ANPASSUNG: Szene "Quiz2" laden
     }
 
     void OnDisable()

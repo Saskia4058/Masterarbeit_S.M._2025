@@ -553,11 +553,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172662015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d66a6276993b345923a5b91acb7a9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 644cfc58d719c744cb0dbbe00c791f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quizSelectButtons: {fileID: 441655938}
-  buttonAnswer3: {fileID: 305757773}
+  buttonAnswer1: {fileID: 1970527472}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -1955,12 +1955,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f655671b8d2ff1a48aa57cac1a4b49ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e3440d6c8b3b0e49ad7edeca5f6c61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
-  - "Super, du hast die Aufgabe richtig gel\xF6st."
+  - Bla Bla
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -3203,12 +3203,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402002837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929a516bcf97ae74f8d5bc7c02f70139, type: 3}
+  m_Script: {fileID: 11500000, guid: 09ab681151a88ba488083d8e7481f7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 698778695}
   sentences:
-  - Deine Auswahl ist leider nicht ganz richtig!
+  - Bla Bla
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
