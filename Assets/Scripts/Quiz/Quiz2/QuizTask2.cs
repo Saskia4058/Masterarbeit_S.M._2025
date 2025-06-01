@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class QuizTask2 : MonoBehaviour
 {
     public QuizSelectButtons quizSelectButtons;
-    public Button buttonAnswer1;
+    public Button buttonAnswer2;
     public Button buttonNext;
 
     public GameObject speechBubbleTrue;
@@ -24,12 +24,12 @@ public class QuizTask2 : MonoBehaviour
 
     void OnNextClicked()
     {
-        if (quizSelectButtons == null || buttonAnswer1 == null)
+        if (quizSelectButtons == null || buttonAnswer2 == null)
             return;
 
         Button selected = quizSelectButtons.GetSelectedButton();
 
-        bool isCorrect = (selected != null && selected == buttonAnswer1);
+        bool isCorrect = (selected != null && selected == buttonAnswer2);
 
         if (speechBubbleTrue != null) speechBubbleTrue.SetActive(false);
         if (speechBubbleFalse != null) speechBubbleFalse.SetActive(false);

@@ -1693,7 +1693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
-  - Bla Bla
+  - "Super, du hast die Aufgabe richtig gel\xF6st."
+  - "Es ist m\xF6glich, eine EFZ-Lehre mit Berufsmaturit\xE4t (BM1) zu absolvieren."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -2941,7 +2942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 698778695}
   sentences:
-  - Bla Bla
+  - Deine Auswahl ist leider nicht ganz richtig!
+  - "Es ist m\xF6glich, eine EFZ-Lehre mit Berufsmaturit\xE4t (BM1) zu absolvieren."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -3231,11 +3233,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Aufgepasst! Jetzt kannst du Bonuspunkte sammeln.
-  - "F\xFCr jede richtige Antwort gibt es einen Punkt."
-  - ' 1. Frage: Wie heisst der Abschluss nach einer Lehre, die 3 oder 4 Jahre dauert?'
-  - "A) Eidg. Berufsattest EBA\nB) Fachmaturit\xE4t"
-  - "C) Eidg. F\xE4higkeitszeugnis EFZ\nD) Berufsmaturit\xE4t"
+  - "N\xE4chste Frage."
+  - "Ist es m\xF6glich, eine EFZ-Lehre mit Matura zu machen?"
+  - A) Ja
+  - B) Nein
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
