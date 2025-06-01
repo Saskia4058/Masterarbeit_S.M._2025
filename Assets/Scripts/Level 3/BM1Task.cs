@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class BM1Task : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class BM1Task : MonoBehaviour
 
     public GameObject speechBubbleTrue;
     public GameObject speechBubbleFalse;
+    public GameObject speechBubbleFalse2;
 
     void Start()
     {
@@ -41,6 +43,7 @@ public class BM1Task : MonoBehaviour
 
         if (speechBubbleTrue != null) speechBubbleTrue.SetActive(false);
         if (speechBubbleFalse != null) speechBubbleFalse.SetActive(false);
+        if (speechBubbleFalse2 != null) speechBubbleFalse2.SetActive(false);
 
         if (isExactlyTheseThreeSelected)
         {
@@ -48,7 +51,18 @@ public class BM1Task : MonoBehaviour
         }
         else
         {
-            if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
+            string currentLevel = SceneManager.GetActiveScene().name;
+
+            bool restarted = LevelRestartTracker.WasLevelRestarted(currentLevel);
+
+            if (restarted)
+            {
+                if (speechBubbleFalse2 != null) speechBubbleFalse2.SetActive(true);
+            }
+            else
+            {
+                if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
+            }
         }
     }
 }
