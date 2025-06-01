@@ -6455,14 +6455,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 652964172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48697a9ba9694c148a24daa42f4fa8c7, type: 3}
+  m_Script: {fileID: 11500000, guid: a5aa387febc9a0b48a00b3911d9d556c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   multiSelectButtons: {fileID: 1032467435}
-  buttonEBA: {fileID: 1837643170}
-  buttonEFZ: {fileID: 1927199448}
-  buttonBM2: {fileID: 1135797143}
-  buttonFH: {fileID: 550051459}
+  buttonWMS: {fileID: 1146318308}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -19260,7 +19257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784188815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 631d19363d3e2df43916a862929ebe00, type: 3}
+  m_Script: {fileID: 11500000, guid: 119725a7b39c8df43bf3a26fa591798e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
