@@ -176,8 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcher Abschluss erm\xF6glicht dir den direkten Zugang zu allen Studieng\xE4ngen
-    an Universit\xE4ten?"
+  m_text: "Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an die Universit\xE4t.
+    Wie heisst die Pr\xFCfung, die du noch machen musst, um an die Universit\xE4t
+    zu kommen?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -554,11 +555,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172662015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5044eec1f8d473428e4e9be787e2807, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bfd0538f71a4f5468f1e9da055638c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quizSelectButtons: {fileID: 441655938}
-  buttonAnswer1: {fileID: 1970527472}
+  buttonAnswer2: {fileID: 534796826}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -1731,7 +1732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D) Alle drei Maturit\xE4tsabschl\xFCsse"
+  m_text: D) Uni-Lehrgang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1956,14 +1957,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9a1c4b2f0ca644fb989bbe4cbc1c44, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ca2afc0969fbe54cb70ae1f23c2ca58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st!"
-  - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
-    an die Universit\xE4t gehen."
+  - "Du musst einen Passerellen-Lehrgang besuchen und eine zus\xE4tzliche Pr\xFCfung
+    machen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -2421,7 +2422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B) Fachmaturit\xE4t (FMS)"
+  m_text: B) Passerellen-Lehrgang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2702,7 +2703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A) Gymnasiale Maturit\xE4t (Gymnasium)"
+  m_text: "A) Br\xFCcken-Lehrgang"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3206,14 +3207,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402002837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5907b7f0c8d2bd0478955ceeed64d24b, type: 3}
+  m_Script: {fileID: 11500000, guid: 35ae59a3d95feb943a415aff7086c1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 698778695}
   sentences:
-  - Deine Auswahl ist leider nicht ganz richtig!
-  - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
-    an die Universit\xE4t gehen."
+  - Deine Auswahl ist leider nicht ganz richtig?
+  - "Du musst einen Passerellen-Lehrgang besuchen und eine zus\xE4tzliche Pr\xFCfung
+    machen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -3409,7 +3410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C) Berufsmaturit\xE4t"
+  m_text: C) Passage-Lehrgang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3760,11 +3761,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - "Hier kommt die n\xE4chste Frage!"
-  - "Welcher Abschluss erm\xF6glicht dir den direkten Zugang zu allen Studieng\xE4ngen
-    an Universit\xE4ten?"
-  - "A) Gymnasiale Maturit\xE4t (Gymnasium)\nB) Fachmaturit\xE4t (FMS)"
-  - "C) Berufsmaturit\xE4t\nD) Alle drei Maturit\xE4tsabschl\xFCsse"
+  - Hier kommt die letzte Frage!
+  - "Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an die Universit\xE4t.
+    Wie heisst die Pr\xFCfung, die du noch machen musst, um an die Universit\xE4t
+    zu kommen?"
+  - "A) Br\xFCcken-Lehrgang\nB) Passerellen-Lehrgang"
+  - 'C) Passage-Lehrgang
+
+    D) Uni-Lehrgang'
   audioClips:
   - {fileID: 0}
   delayBetweenLetters: 0.05

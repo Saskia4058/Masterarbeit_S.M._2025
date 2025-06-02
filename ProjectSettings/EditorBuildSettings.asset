@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Quiz 6.unity
     guid: a24b72b370d088f4c987c43f98242a0e
   - enabled: 1
+    path: Assets/Scenes/Quiz 8.unity
+    guid: 3c2f75cb8de587e42962b6b7073b4e41
+  - enabled: 1
     path: Assets/Scenes/Quiz 7.unity
     guid: 4fb16a4b885188440b3b94ca8f45cfdf
   - enabled: 1
