@@ -176,8 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Die Wirtschaftsmittelschule WMS f\xFChrt zu zwei Abschl\xFCssen. Welche
-    sind das?"
+  m_text: "Wie lange dauert die Ausbildung an der Fachmittelschule (FMS), bis man
+    die Fachmaturit\xE4t bekommt?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -554,11 +554,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172662015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea51eb1a439ad54ab272fc259076669, type: 3}
+  m_Script: {fileID: 11500000, guid: b67091756ecdfcc44a9867fbe3c20606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quizSelectButtons: {fileID: 441655938}
-  buttonAnswer4: {fileID: 1824202215}
+  buttonAnswer3: {fileID: 305757773}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D) Kaufleute EFZ & Berufsmaturit\xE4t"
+  m_text: D) 5 Jahre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1956,13 +1956,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081d98e41fb60f3459c4410db06c06b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 49f73dcb51da024479f39694451b1c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
+  - "Nach 4 Jahren Fachmittelschule kannst du die Fachmaturit\xE4t machen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B) Kaufleute EFZ & EBA
+  m_text: B) 3 Jahre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A) Kaufleute EFZ & Fachmaturit\xE4t"
+  m_text: A) 2 Jahre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3205,13 +3205,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402002837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 008d20fb08dd62f4eb677605517329b7, type: 3}
+  m_Script: {fileID: 11500000, guid: ed31cebbec32b9c40bc086cae9b3fe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 698778695}
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
-  - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
+  - "Nach 4 Jahren Fachmittelschule kannst du die Fachmaturit\xE4t machen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -3407,7 +3407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C) Kaufleute EFZ & Wirtschaftsmaturit\xE4t"
+  m_text: C) 4 Jahre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3758,11 +3758,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Jetzt gibt es noch einmal die Chance, Bonuspunkte zu sammeln!
-  - "Die Wirtschaftsmittelschule WMS f\xFChrt zu zwei Abschl\xFCssen. Welche sind
-    das?"
-  - "A) Kaufleute EFZ & Fachmaturit\xE4t\nB) Kaufleute EFZ & EBA"
-  - "C) Kaufleute EFZ & Wirtschaftmaturit\xE4t\nD) Kaufleute EFZ & Berufsmaturit\xE4t"
+  - "N\xE4chste Frage!"
+  - "Wie lange dauert die Ausbildung an der Fachmittelschule (FMS), bis man die Fachmaturit\xE4t
+    bekommt?"
+  - 'A) 2 Jahre
+
+    B) 3 Jahre'
+  - 'C) 4 Jahre
+
+    D) 5 Jahre'
   audioClips:
   - {fileID: 0}
   delayBetweenLetters: 0.05

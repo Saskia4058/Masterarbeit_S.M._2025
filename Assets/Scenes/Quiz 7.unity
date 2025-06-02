@@ -176,8 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Die Wirtschaftsmittelschule WMS f\xFChrt zu zwei Abschl\xFCssen. Welche
-    sind das?"
+  m_text: "Welcher Abschluss erm\xF6glicht dir den direkten Zugang zu allen Studieng\xE4ngen
+    an Universit\xE4ten?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -554,11 +554,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172662015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea51eb1a439ad54ab272fc259076669, type: 3}
+  m_Script: {fileID: 11500000, guid: d5044eec1f8d473428e4e9be787e2807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quizSelectButtons: {fileID: 441655938}
-  buttonAnswer4: {fileID: 1824202215}
+  buttonAnswer1: {fileID: 1970527472}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D) Kaufleute EFZ & Berufsmaturit\xE4t"
+  m_text: "D) Alle drei Maturit\xE4tsabschl\xFCsse"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1956,13 +1956,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081d98e41fb60f3459c4410db06c06b8, type: 3}
+  m_Script: {fileID: 11500000, guid: aa9a1c4b2f0ca644fb989bbe4cbc1c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
-  - "Super, du hast die Aufgabe richtig gel\xF6st."
-  - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
+  - "Super, du hast die Aufgabe richtig gel\xF6st!"
+  - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
+    an die Universit\xE4t gehen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -2420,7 +2421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B) Kaufleute EFZ & EBA
+  m_text: "B) Fachmaturit\xE4t (FMS)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2701,7 +2702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A) Kaufleute EFZ & Fachmaturit\xE4t"
+  m_text: "A) Gymnasiale Maturit\xE4t (Gymnasium)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3205,13 +3206,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402002837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 008d20fb08dd62f4eb677605517329b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5907b7f0c8d2bd0478955ceeed64d24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 698778695}
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
-  - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
+  - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
+    an die Universit\xE4t gehen."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -3407,7 +3409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C) Kaufleute EFZ & Wirtschaftsmaturit\xE4t"
+  m_text: "C) Berufsmaturit\xE4t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3758,11 +3760,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Jetzt gibt es noch einmal die Chance, Bonuspunkte zu sammeln!
-  - "Die Wirtschaftsmittelschule WMS f\xFChrt zu zwei Abschl\xFCssen. Welche sind
-    das?"
-  - "A) Kaufleute EFZ & Fachmaturit\xE4t\nB) Kaufleute EFZ & EBA"
-  - "C) Kaufleute EFZ & Wirtschaftmaturit\xE4t\nD) Kaufleute EFZ & Berufsmaturit\xE4t"
+  - "Hier kommt die n\xE4chste Frage!"
+  - "Welcher Abschluss erm\xF6glicht dir den direkten Zugang zu allen Studieng\xE4ngen
+    an Universit\xE4ten?"
+  - "C) Gymnasiale Maturit\xE4t (Gymnasium)\nD) Fachmaturit\xE4t (FMS)"
+  - "C) Berufsmaturit\xE4t\nD) Alle drei Maturit\xE4tsabschl\xFCsse"
   audioClips:
   - {fileID: 0}
   delayBetweenLetters: 0.05
