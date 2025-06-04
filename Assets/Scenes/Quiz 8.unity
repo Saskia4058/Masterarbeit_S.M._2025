@@ -177,8 +177,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an die Universit\xE4t.
-    Wie heisst die Pr\xFCfung, die du noch machen musst, um an die Universit\xE4t
-    zu kommen?"
+    Wie heisst der Lehrgang, den du noch machen musst, um an die Universit\xE4t zu
+    kommen?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1957,12 +1957,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ca2afc0969fbe54cb70ae1f23c2ca58, type: 3}
+  m_Script: {fileID: 11500000, guid: 7717d464e3e7a6948b0f5a27cd5078db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
-  - "Super, du hast die Aufgabe richtig gel\xF6st!"
+  - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Du musst einen Passerellen-Lehrgang besuchen und eine zus\xE4tzliche Pr\xFCfung
     machen."
   audioClips: []
@@ -1970,7 +1970,7 @@ MonoBehaviour:
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
   speechBubbleExplain: {fileID: 0}
-  speechBubbleExercise: {fileID: 0}
+  speechBubbleExercise: {fileID: 1896349261}
 --- !u!1 &677785795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,8 +3763,8 @@ MonoBehaviour:
   sentences:
   - Hier kommt die letzte Frage!
   - "Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an die Universit\xE4t.
-    Wie heisst die Pr\xFCfung, die du noch machen musst, um an die Universit\xE4t
-    zu kommen?"
+    Wie heisst der Lehrgang, den du noch machen musst, um an die Universit\xE4t zu
+    kommen?"
   - "A) Br\xFCcken-Lehrgang\nB) Passerellen-Lehrgang"
   - 'C) Passage-Lehrgang
 
