@@ -140,7 +140,42 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
 
     private void OnWeiterButtonClicked()
     {
-        SceneManager.LoadScene("Quiz 2");
+        string nextScene = GetNextSceneName();
+        if (!string.IsNullOrEmpty(nextScene))
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+        else
+        {
+            Debug.LogWarning("Keine nächste Szene definiert für: " + SceneManager.GetActiveScene().name);
+        }
+    }
+
+    // NEU: Automatische Szenenwechsel-Logik
+    private string GetNextSceneName()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        switch (currentScene)
+        {
+            case "Level 1": return "Level 2";
+            case "Level 2": return "Level 3";
+            case "Level 3": return "Level 4";
+            case "Level 4": return "Quiz 1";
+            case "Quiz 1": return "Quiz 2";
+            case "Quiz 2": return "Quiz 3";
+            case "Quiz 3": return "Quiz 4";
+            case "Quiz 4": return "Level 5";
+            case "Level 5": return "Level 6";
+            case "Level 6": return "Level 7";
+            case "Level 7": return "Level 8";
+            case "Level 8": return "Quiz 5";
+            case "Quiz 5": return "Quiz 6";
+            case "Quiz 6": return "Quiz 7";
+            case "Quiz 7": return "Quiz 8";
+            case "Quiz 8": return "Rank";
+            default: return "";
+        }
     }
 
     void OnDisable()
