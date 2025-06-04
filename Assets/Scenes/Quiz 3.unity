@@ -1688,7 +1688,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98028e265ec292040bf1b04f52981a7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7717d464e3e7a6948b0f5a27cd5078db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
@@ -1700,7 +1700,7 @@ MonoBehaviour:
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
   speechBubbleExplain: {fileID: 0}
-  speechBubbleExercise: {fileID: 0}
+  speechBubbleExercise: {fileID: 1896349261}
 --- !u!1 &677785795
 GameObject:
   m_ObjectHideFlags: 0
