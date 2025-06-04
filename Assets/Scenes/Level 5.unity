@@ -19257,12 +19257,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784188815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 119725a7b39c8df43bf3a26fa591798e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a57b385451d0d242b4d91138d0965ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla Bla
+  - Bla
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
