@@ -19259,16 +19259,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784188815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f85b38b53ec3ae47a507a238803a8e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a57b385451d0d242b4d91138d0965ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Die Antwort ist ja!
-  - Du kannst eine EFZ-Lehre mit Berufsmatur machen.
-  - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule FH studieren."
-  - "Du kannst sie w\xE4hrend der Lehre machen - BM1 - oder nach der Lehre - BM2."
-  - Es gibt 5 Ausrichtungen.
+  - Bla
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
