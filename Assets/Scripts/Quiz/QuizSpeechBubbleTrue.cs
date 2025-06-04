@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
-using UnityEngine.SceneManagement; // <-- NEU hinzugefügt
+using UnityEngine.SceneManagement;
 
-public class QuizSpeechBubbleTrue2 : MonoBehaviour
+public class QuizSpeechBubbleTrue : MonoBehaviour
 {
     public TextMeshProUGUI dialogText;
 
@@ -140,7 +140,36 @@ public class QuizSpeechBubbleTrue2 : MonoBehaviour
 
     private void OnWeiterButtonClicked()
     {
-        SceneManager.LoadScene("Quiz 3"); // <-- ANPASSUNG: Szene "Quiz2" laden
+        string nextScene = GetNextSceneName();
+        if (!string.IsNullOrEmpty(nextScene))
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+        else
+        {
+            Debug.LogWarning("Keine nächste Szene definiert!");
+        }
+    }
+
+    /// <summary>
+    /// Gibt den Namen der nächsten Szene zurück basierend auf dem aktuellen Szenennamen.
+    /// </summary>
+    private string GetNextSceneName()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        switch (currentScene)
+        {
+            case "Quiz 1": return "Quiz 2";
+            case "Quiz 2": return "Quiz 3";
+            case "Quiz 3": return "Quiz 4";
+            case "Quiz 4": return "Quiz 5";
+            case "Quiz 5": return "Quiz 6";
+            case "Quiz 6": return "Quiz 7";
+            case "Quiz 7": return "Quiz 8";
+            case "Quiz 8": return "Rank"; // Abschluss-Szene
+            default: return "";
+        }
     }
 
     void OnDisable()

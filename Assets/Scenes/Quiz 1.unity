@@ -1955,12 +1955,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 667384952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f655671b8d2ff1a48aa57cac1a4b49ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 7717d464e3e7a6948b0f5a27cd5078db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 104755821}
   sentences:
-  - "Super, du hast die Aufgabe richtig gel\xF6st."
+  - "Super, du hast die Aufgabe richtig gel\xF6st!"
   - "Der Abschluss nach einer 3- oder 4-j\xE4hrigen Lehre heisst \"Eidg. F\xE4higkeitszeugnis
     EFZ\"."
   audioClips: []
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
   speechBubbleExplain: {fileID: 0}
-  speechBubbleExercise: {fileID: 0}
+  speechBubbleExercise: {fileID: 1896349261}
 --- !u!1 &677785795
 GameObject:
   m_ObjectHideFlags: 0
