@@ -19402,25 +19402,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784188815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b04e51c4d17991459db11c7aff78d28, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a57b385451d0d242b4d91138d0965ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - "Die richtige Antwort ist eidgen\xF6ssisches Berufsattest EBA."
-  - "Das ist ein Abschluss nach einer 2-j\xE4hrigen Lehre."
-  - In der EBA-Lehre lernst du alles Wichtige zum Arbeiten in einem Beruf mit einfachen
-    Anforderungen.
-  - Sie richtet sich an Personen mit schulischen Schwierigkeiten.
-  - Nach einer EBA-Lehre kannst du eine EFZ-Lehre machen.
-  - Es gibt 60 Berufe mit EBA, die du nach der Schule erlernen kannst.
-  audioClips:
-  - {fileID: 8300000, guid: 3c576a3418fd3f945aa2a044483d2c64, type: 3}
-  - {fileID: 8300000, guid: 2815ddde6ba1a354f9913cb948a56ab9, type: 3}
-  - {fileID: 8300000, guid: f7ca1fe0573d7974e8b2b28c8840c18e, type: 3}
-  - {fileID: 8300000, guid: 5a966d63ef375954b98838c2e035a8cf, type: 3}
-  - {fileID: 8300000, guid: f074c78df1f451c4d9ee3ea3d387d95b, type: 3}
-  - {fileID: 8300000, guid: 8764ce5946eddd94294815655e34b2d6, type: 3}
+  - Bla Bla
+  audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}

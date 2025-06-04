@@ -163,7 +163,7 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
             case "Quiz 1": return "Quiz 2";
             case "Quiz 2": return "Quiz 3";
             case "Quiz 3": return "Quiz 4";
-            case "Quiz 4": return "Quiz 5";
+            case "Quiz 4": return "Level 5";
             case "Quiz 5": return "Quiz 6";
             case "Quiz 6": return "Quiz 7";
             case "Quiz 7": return "Quiz 8";

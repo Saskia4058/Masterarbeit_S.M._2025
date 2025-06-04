@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SpeechBubbleExplain2 : MonoBehaviour
+public class SpeechBubbleExplain : MonoBehaviour
 {
     public TextMeshProUGUI dialogText;
 
@@ -153,7 +153,29 @@ public class SpeechBubbleExplain2 : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("Level 3"); // Neue Scene laden
+        string nextScene = GetNextSceneName();
+        if (!string.IsNullOrEmpty(nextScene))
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+    }
+
+    private string GetNextSceneName()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        switch (currentScene)
+        {
+            case "Level 1": return "Level 2";
+            case "Level 2": return "Level 3";
+            case "Level 3": return "Level 4";
+            case "Level 4": return "Quiz 1";
+            case "Level 5": return "Level 6";
+            case "Level 6": return "Level 7";
+            case "Level 7": return "Level 8";
+            case "Level 8": return "Quiz 5"; // Abschluss-Szene
+            default: return "";
+        }
     }
 
     void OnDisable() // Sicherheit: Audio stoppen, wenn Bubble deaktiviert wird
