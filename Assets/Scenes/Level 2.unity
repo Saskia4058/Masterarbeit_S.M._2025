@@ -10504,6 +10504,57 @@ MonoBehaviour:
     buttonB: {fileID: 1983240440}
   normalColor: {r: 0.7372549, g: 0.44313726, b: 0.12941177, a: 1}
   highlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+--- !u!1 &1060190890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1060190892}
+  - component: {fileID: 1060190891}
+  m_Layer: 0
+  m_Name: LineConnectorController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1060190891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060190890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a07c3af35513b840851ece9cc5bc001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiSelectButtons: {fileID: 1032467435}
+  connectors:
+  - lineRenderer: {fileID: 821343195}
+    buttonA: {fileID: 1837643170}
+    buttonB: {fileID: 1927199448}
+  normalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+  highlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+--- !u!4 &1060190892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060190890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 661.4393, y: 193.5849, z: -1.7848319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077574016
 GameObject:
   m_ObjectHideFlags: 0
@@ -20790,6 +20841,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861717942}
   m_CullTransparentMesh: 1
+--- !u!1 &1886212575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1886212577}
+  - component: {fileID: 1886212576}
+  m_Layer: 0
+  m_Name: SolutionRevealController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1886212576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886212575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e89f3c341572144590fe86ed82688cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechBubbleExplain: {fileID: 1784188815}
+  multiSelectButtons: {fileID: 1032467435}
+  lineConnectorController: {fileID: 1060190891}
+  taskManager: {fileID: 652964172}
+--- !u!4 &1886212577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886212575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 661.4393, y: 193.5849, z: -1.7848319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894458189
 GameObject:
   m_ObjectHideFlags: 0
@@ -23374,3 +23473,5 @@ SceneRoots:
   - {fileID: 1831142315}
   - {fileID: 732820596}
   - {fileID: 652964173}
+  - {fileID: 1886212577}
+  - {fileID: 1060190892}

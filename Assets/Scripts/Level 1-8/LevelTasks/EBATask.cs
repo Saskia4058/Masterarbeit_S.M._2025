@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class EBATask : MonoBehaviour
+public class EBATask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
 
@@ -36,7 +36,7 @@ public class EBATask : MonoBehaviour
         bool containsEFZ = selected.Contains(buttonEFZ);
         bool containsEBA = selected.Contains(buttonEBA);
 
-        bool isExactlyTheseTwoSelected = 
+        bool isExactlyTheseTwoSelected =
             selected.Count == 2 &&
             containsEFZ && containsEBA;
 
@@ -63,5 +63,9 @@ public class EBATask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+    public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonEBA, buttonEFZ };
     }
 }
