@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class PasserelleTask : MonoBehaviour
+public class PasserelleTask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
 
@@ -40,7 +40,7 @@ public class PasserelleTask : MonoBehaviour
         bool containsPasserelle = selected.Contains(buttonPasserelle);
         bool containsUNI = selected.Contains(buttonUNI);
 
-        bool isExactlyTheseFourSelected = 
+        bool isExactlyTheseFourSelected =
             selected.Count == 4 &&
             containsFMS && containsFaMa && containsPasserelle && containsUNI;
 
@@ -67,5 +67,9 @@ public class PasserelleTask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+                    public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonFMS, buttonFaMa, buttonPasserelle, buttonUNI };
     }
 }
