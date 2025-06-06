@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class GYMTask : MonoBehaviour
+public class GYMTask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
 
@@ -36,7 +36,7 @@ public class GYMTask : MonoBehaviour
         bool containsGYM = selected.Contains(buttonGYM);
         bool containsUNI = selected.Contains(buttonUNI);
 
-        bool isExactlyTheseTwoSelected = 
+        bool isExactlyTheseTwoSelected =
             selected.Count == 2 &&
             containsGYM && containsUNI;
 
@@ -63,5 +63,9 @@ public class GYMTask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+                public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonGYM, buttonUNI };
     }
 }
