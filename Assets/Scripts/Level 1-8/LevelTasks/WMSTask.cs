@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class WMSTask : MonoBehaviour
+public class WMSTask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
     public Button buttonWMS;
@@ -55,5 +55,9 @@ public class WMSTask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+        public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonWMS };
     }
 }
