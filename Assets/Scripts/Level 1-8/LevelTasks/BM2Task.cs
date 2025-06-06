@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class BM2Task : MonoBehaviour
+public class BM2Task : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
 
@@ -40,7 +40,7 @@ public class BM2Task : MonoBehaviour
         bool containsBM2 = selected.Contains(buttonBM2);
         bool containsFH = selected.Contains(buttonFH);
 
-        bool isExactlyTheseFourSelected = 
+        bool isExactlyTheseFourSelected =
             selected.Count == 4 &&
             containsEBA && containsEFZ && containsBM2 && containsFH;
 
@@ -67,5 +67,9 @@ public class BM2Task : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+    public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonEBA, buttonEFZ, buttonBM2, buttonFH };
     }
 }
