@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class FMSTask : MonoBehaviour
+public class FMSTask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
 
@@ -38,7 +38,7 @@ public class FMSTask : MonoBehaviour
         bool containsFaMa = selected.Contains(buttonFaMa);
         bool containsFH = selected.Contains(buttonFH);
 
-        bool isExactlyTheseThreeSelected = 
+        bool isExactlyTheseThreeSelected =
             selected.Count == 3 &&
             containsFMS && containsFaMa && containsFH;
 
@@ -65,5 +65,9 @@ public class FMSTask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+            public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonFMS, buttonFaMa, buttonFH };
     }
 }
