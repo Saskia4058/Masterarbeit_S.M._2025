@@ -3,11 +3,13 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class EFZTask : MonoBehaviour
+// ✅ NEU: Interface implementieren
+public class EFZTask : MonoBehaviour, ILevelTask
 {
     public MultiSelectButtons multiSelectButtons;
     public Button buttonEFZ;
     public Button buttonNext;
+
     public GameObject speechBubbleTrue;
     public GameObject speechBubbleFalse;
     public GameObject speechBubbleFalse2;  // NEU: Zweite "falsche" SpeechBubble
@@ -56,5 +58,11 @@ public class EFZTask : MonoBehaviour
                 if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
             }
         }
+    }
+
+    // ✅ NEU: Methode zur Rückgabe der korrekten Buttons für die Lösung
+    public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonEFZ };
     }
 }
