@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class QuizTask3 : MonoBehaviour
+public class QuizTask3 : MonoBehaviour, ILevelTask
 {
     public QuizSelectButtons quizSelectButtons;
     public Button buttonAnswer1;
@@ -42,5 +42,9 @@ public class QuizTask3 : MonoBehaviour
         {
             if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
         }
+    }
+                public List<Button> GetCorrectButtons()
+    {
+        return new List<Button> { buttonAnswer1 };
     }
 }
