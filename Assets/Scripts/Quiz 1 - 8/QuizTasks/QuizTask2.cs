@@ -43,7 +43,7 @@ public class QuizTask2 : MonoBehaviour, ILevelTask
             if (speechBubbleFalse != null) speechBubbleFalse.SetActive(true);
         }
     }
-            public List<Button> GetCorrectButtons()
+        public List<Button> GetCorrectButtons()
     {
         return new List<Button> { buttonAnswer2 };
     }
