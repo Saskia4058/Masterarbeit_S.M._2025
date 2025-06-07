@@ -9821,27 +9821,27 @@ PrefabInstance:
     - target: {fileID: 328477577367160438, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.39030355
+      value: 0.39073122
       objectReference: {fileID: 0}
     - target: {fileID: 328477577367160438, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 328477577367160438, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 328477577367160438, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.92068624
+      value: -0.92050487
       objectReference: {fileID: 0}
     - target: {fileID: 328477577367160438, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -134.053
+      value: -134
       objectReference: {fileID: 0}
     - target: {fileID: 694365646614050377, guid: ff726fab952ce5445afeb61d329ca0e1,
         type: 3}
@@ -9973,7 +9973,7 @@ Animator:
   m_GameObject: {fileID: 946348813}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 16d173604589d0c479e91d4e040cc011, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3196a1c4d3957994d922be701eaa1838, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
