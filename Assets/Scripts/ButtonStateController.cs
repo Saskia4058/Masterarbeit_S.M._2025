@@ -42,7 +42,7 @@ public class ButtonStateController : MonoBehaviour
 
         bool shouldBeInteractable = isReplayActive && !isAnyBubbleActive;
 
-        foreach (Button btn in FindObjectsOfType<Button>())
+        foreach (Button btn in Object.FindObjectsByType<Button>(FindObjectsSortMode.None))
         {
             if (excludedButtons.Contains(btn.name))
                 continue;

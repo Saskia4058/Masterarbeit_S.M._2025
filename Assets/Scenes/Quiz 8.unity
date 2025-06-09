@@ -739,11 +739,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.48235294, g: 0.62352943, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    m_PressedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_DisabledColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 0.5019608}
+    m_NormalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+    m_PressedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_SelectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_DisabledColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1319,21 +1319,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - button: {fileID: 1970527472}
-    normalColor: {r: 0.48235294, g: 0.62352943, b: 0.23137255, a: 1}
-    highlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    selectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
+    normalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+    highlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+    selectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
   - button: {fileID: 534796826}
-    normalColor: {r: 0.48235297, g: 0.62352943, b: 0.23137257, a: 1}
-    highlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    selectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
+    normalColor: {r: 0.8980393, g: 0.6039216, b: 0.2901961, a: 1}
+    highlightedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    selectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
   - button: {fileID: 305757773}
-    normalColor: {r: 0.48235297, g: 0.62352943, b: 0.23137257, a: 1}
-    highlightedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    selectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
+    normalColor: {r: 0.8980393, g: 0.6039216, b: 0.2901961, a: 1}
+    highlightedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    selectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
   - button: {fileID: 1824202215}
-    normalColor: {r: 0.48235297, g: 0.62352943, b: 0.23137257, a: 1}
-    highlightedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    selectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
+    normalColor: {r: 0.8980393, g: 0.6039216, b: 0.2901961, a: 1}
+    highlightedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    selectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
   - button: {fileID: 420666346}
     normalColor: {r: 0.07058824, g: 0.9490196, b: 0.25882354, a: 1}
     highlightedColor: {r: 0.05490196, g: 0.78431374, b: 0.21568628, a: 1}
@@ -1633,11 +1633,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.48235294, g: 0.62352943, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    m_PressedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_DisabledColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 0.5019608}
+    m_NormalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+    m_PressedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_SelectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_DisabledColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2059,7 +2059,9 @@ MonoBehaviour:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Du musst einen Passerellen-Lehrgang besuchen und eine zus\xE4tzliche Pr\xFCfung
     machen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 98581b53af9d45a4683d962239d9b41e, type: 3}
+  - {fileID: 8300000, guid: 3b4b6c65077829341b3cc23ef675016c, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -3599,7 +3601,9 @@ MonoBehaviour:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Du musst einen Passerellen-Lehrgang besuchen und eine zus\xE4tzliche Pr\xFCfung
     machen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 496d40030a308dd46863ae9ba1a3df19, type: 3}
+  - {fileID: 8300000, guid: 3b4b6c65077829341b3cc23ef675016c, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -3933,11 +3937,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.48235294, g: 0.62352943, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    m_PressedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_DisabledColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 0.5019608}
+    m_NormalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+    m_PressedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_SelectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_DisabledColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4145,8 +4149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hier kommt die letzte Frage!
-  - "Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an die Universit\xE4t."
+  - "Letzte Frage! Du hast eine Berufs- oder Fachmaturit\xE4t und m\xF6chtest an
+    die Universit\xE4t."
   - "Wie heisst der Lehrgang, den du noch machen musst, um an die Universit\xE4t
     zu kommen?"
   - "A) Br\xFCcken-Lehrgang\nB) Passerellen-Lehrgang"
@@ -4154,7 +4158,10 @@ MonoBehaviour:
 
     D) Uni-Lehrgang'
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: e3d87274e2ece5d488da95bdf1415b02, type: 3}
+  - {fileID: 8300000, guid: 072af1f85027fcd48bef332d5c9c9893, type: 3}
+  - {fileID: 8300000, guid: bf865e285b7a1614f848222333c3fa8a, type: 3}
+  - {fileID: 8300000, guid: 341565addeefc11469c3d0da9926e6a2, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   replayButton: {fileID: 1505370020}
@@ -4368,11 +4375,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.48235294, g: 0.62352943, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.6039216, g: 0.78039217, b: 0.2901961, a: 1}
-    m_PressedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_SelectedColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 1}
-    m_DisabledColor: {r: 0.6039216, g: 0.7803922, b: 0.2901961, a: 0.5019608}
+    m_NormalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
+    m_PressedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_SelectedColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 1}
+    m_DisabledColor: {r: 1, g: 0.70980394, b: 0.40000004, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
