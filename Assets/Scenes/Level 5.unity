@@ -19542,7 +19542,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla
+  - Du kannst zuerst eine EBA-Lehre machen.
+  - "Die EBA-Lehre ist f\xFCr Personen, die in der Schule Schwierigkeiten haben."
+  - Nach der EBA-Lehre kannst du eine EFZ-Lehre machen.
+  - "Nach der EFZ-Lehre kannst du die Berufsmaturit\xE4t BM2 machen - Voll- oder
+    Teilzeit."
+  - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule studieren."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -21057,11 +21062,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hallo, ich bin Ben.
-  - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
-  - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
-  - "Daf\xFCr brauche ich eine Matur."
-  - Kann ich eine Lehre mit Matura machen?
+  - Hey, ich bin Fin.
+  - "Ich m\xF6chte Wirtschaft an einer Fachhochschule FH studieren."
+  - Ich habe Schwierigkeiten beim Lernen.
+  - "Deshalb m\xF6chte ich mein Ziel Schritt f\xFCr Schritt erreichen."
+  - "Nach der Schule m\xF6chte ich zuerst einen Beruf erlernen."
+  - "Gut w\xE4re eine Lehre, in der ich einfache Anforderungen lerne."
+  - Welchen Weg kann ich nach der Schule gehen, um mein Wunschzielk, die Fachhochschule,
+    zu erreichen?
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2

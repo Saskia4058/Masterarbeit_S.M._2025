@@ -11970,7 +11970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 33166693}
   sentences:
-  - "Deine Auswahl ist immer noch nicht ganz richtig. Hier die L\xF6sung."
+  - Deine Auswahl ist immer noch nicht ganz richtig.
+  - "Hier die L\xF6sung."
   audioClips:
   - {fileID: 8300000, guid: cf9701ceb10b7e54882a3f840ed19eb3, type: 3}
   delayBetweenLetters: 0.05

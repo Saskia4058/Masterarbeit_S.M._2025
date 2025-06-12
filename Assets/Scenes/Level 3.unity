@@ -19608,7 +19608,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla
+  - "Du kannst eine EFZ-Lehre mit Berufsmaturit\xE4t, BM1, machen."
+  - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule (FH) studieren."
+  - "Es gibt 5 Ausrichtungen der Berufsmaturit\xE4t."
+  - Sie verbindet berufliche Kenntnisse mit einer vertieften Allgemeinbildung.
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -21127,7 +21130,7 @@ MonoBehaviour:
   - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
   - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
   - "Daf\xFCr brauche ich eine Matur."
-  - Kann ich eine Lehre mit Matura machen?
+  - Kann ich eine Lehre mit Matura machen und dann an die Fachhochschule (FH) gehen?
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2

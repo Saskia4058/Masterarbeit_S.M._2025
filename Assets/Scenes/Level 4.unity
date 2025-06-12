@@ -19942,7 +19942,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla
+  - Du kannst die Wirtschaftsmittelschule (WMS) besuchen.
+  - 'Das ist eine Ausbildung, die 4 Jahre dauert: 3 Jahre Schule und einem Jahr Berufspraktikum.'
+  - "Sie f\xFChrt zu zwei Abschl\xFCssen: Kauffrau/Kaufmann EFZ und Berufsmaturit\xE4t."
+  - "Nach der WMS kannst du in einem kaufm\xE4nnischen Beruf arbeiten oder an einer
+    Fachhochschule (FH) studieren."
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
@@ -21457,11 +21461,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hallo, ich bin Ben.
-  - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
-  - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
-  - "Daf\xFCr brauche ich eine Matur."
-  - Kann ich eine Lehre mit Matura machen?
+  - Ich bin Claire.
+  - "Ich m\xF6chte Kauffrau werden."
+  - "Sp\xE4ter m\xF6chte ich vielleicht eine Weiterbildung oder ein Studium im Bereich
+    Handel und Wirtschaft machen."
+  - "Eine Lehre m\xF6chte ich nicht machen, ich m\xF6chte lieber weiter zur Schule
+    gehen."
+  - "Ist es m\xF6glich, \xFCber eine Schule Kauffrau EFZ zu werden? Und gleichzeitig
+    die Matur zu erlangen?"
   audioClips: []
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2

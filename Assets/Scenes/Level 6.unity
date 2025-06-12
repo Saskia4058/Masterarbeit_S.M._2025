@@ -6874,7 +6874,8 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: f846568ff0fabf742bfad7944b489d68, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -11988,7 +11989,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: c56c0a0131f0f8e4e850ab49eac98f17, type: 3}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -15110,7 +15113,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 79434521727b77749855b13eaa6a5e96, type: 3}
+  - {fileID: 8300000, guid: e742db9c4ad123440b596f4e258bc597, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -19781,8 +19786,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla Bla
-  audioClips: []
+  - "Du kannst \xFCber die Fachmittelschule FMS an die Fachhochschule FH."
+  - Die Ausbildung an einer FMS vertieft das Allgemeinwissen und berufsspezifische
+    Kenntnisse.
+  - "Der erste Teil dauert 3 Jahre und f\xFChrt zum Fachmittelschulausweis."
+  - "Danach kannst du ein weiteres Jahr machen und die Fachmaturit\xE4t erwerben."
+  - Damit kannst du an einer Fachhochschule FH studieren.
+  audioClips:
+  - {fileID: 8300000, guid: 2f4e2575bfb9abf49bf007d28eb93f54, type: 3}
+  - {fileID: 8300000, guid: fb238f5a28ba8b04487a80bd6e0e91a0, type: 3}
+  - {fileID: 8300000, guid: b9edaf421317d0349afef6ec72def9a5, type: 3}
+  - {fileID: 8300000, guid: c2c9445153b1a414c803a2141a17c48d, type: 3}
+  - {fileID: 8300000, guid: b5147a19e2463a74a9e5d8b876444b32, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21296,12 +21311,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hallo, ich bin Ben.
-  - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
-  - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
-  - "Daf\xFCr brauche ich eine Matur."
-  - Kann ich eine Lehre mit Matura machen?
-  audioClips: []
+  - Hallo, ich bin Tine.
+  - "Ich m\xF6chte an die Fachmittelschule FMS gehen."
+  - "Nach der FMS m\xF6chte ich Medizininformatik an der Fachhochschule FH studieren."
+  - "Kann ich dieses Ziel \xFCber die FMS erreichen?"
+  - Wie sieht mein Weg bis zur Fachhochschule FH aus?
+  audioClips:
+  - {fileID: 8300000, guid: 27d1b63d95f89e244baf3b50d7b4f8e4, type: 3}
+  - {fileID: 8300000, guid: 03bf811d1c818aa408bbbf1dd2f8d938, type: 3}
+  - {fileID: 8300000, guid: 4d8af97cc494c0a40b80f2bf1870c1c1, type: 3}
+  - {fileID: 8300000, guid: a97cde96882a71442bebe466d785e7ff, type: 3}
+  - {fileID: 8300000, guid: 161a0e62192851d4985f2df64f56fe0f, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -22878,7 +22898,9 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips: []
+  audioClips:
+  - {fileID: 0}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

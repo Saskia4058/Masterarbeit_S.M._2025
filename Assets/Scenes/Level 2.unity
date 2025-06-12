@@ -20039,8 +20039,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla Bla
-  audioClips: []
+  - Du kannst zuerst eine EBA-Lehre und danach eine EFZ-Lehre machen.
+  - Die EBA-Lehre dauert 2 Jahre.
+  - EBA heisst "eidg. Berufsattest" - das ist der Abschluss nach der EBA-Lehre.
+  - In der EBA-Lehre lernst du alles Wichtige zum Arbeiten in einem Beruf mit einfachen
+    Anforderungen.
+  - Sie richtet sich an Personen mit schulischen Schwierigkeiten.
+  - Es gibt 60 Berufe mit EBA, die du nach der Schule erlernen kannst.
+  audioClips:
+  - {fileID: 8300000, guid: 81937bcc66f61f749bdb35d19d3b273e, type: 3}
+  - {fileID: 8300000, guid: 2815ddde6ba1a354f9913cb948a56ab9, type: 3}
+  - {fileID: 8300000, guid: 83cd87aad57bbf64aaf2cd8adc94a098, type: 3}
+  - {fileID: 8300000, guid: f7ca1fe0573d7974e8b2b28c8840c18e, type: 3}
+  - {fileID: 8300000, guid: 5a966d63ef375954b98838c2e035a8cf, type: 3}
+  - {fileID: 8300000, guid: 8764ce5946eddd94294815655e34b2d6, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21680,15 +21692,16 @@ MonoBehaviour:
   - Hey, ich bin Samira.
   - "Ich m\xF6chte nach der Schule einen Beruf lernen - mein Traumberuf ist Schreinerin
     EFZ."
-  - "In der Schule habe ich etwas M\xFChe. "
-  - "Ist es m\xF6glich, zuerst einen anderen Abschluss zu machen?"
-  - Und danach die Lehre als Schreinerin EFZ zu beginnen?
+  - In der Schule habe ich Schwierigkeiten.
+  - "Ist es m\xF6glich, nach der Schule zuerst eine Lehre mit einfachen Anforderungen
+    zu machen?"
+  - Und danach eine EFZ-Lehre?
   audioClips:
   - {fileID: 8300000, guid: 29d48061cacac3347a21690ae0fbb1a9, type: 3}
   - {fileID: 8300000, guid: 0a61053739375d940ad2e26c489291e8, type: 3}
-  - {fileID: 8300000, guid: f46da162b977e434094dd905f12c15b4, type: 3}
-  - {fileID: 8300000, guid: 09c4ea4b86bf763498e1ee4a1785fc12, type: 3}
-  - {fileID: 8300000, guid: b6627a528b2d8bc448e6f4de959e54e8, type: 3}
+  - {fileID: 8300000, guid: 3934db63f85a5574997707011a979487, type: 3}
+  - {fileID: 8300000, guid: 47b6e7939db51dc4c8920fe59c8e6efc, type: 3}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}

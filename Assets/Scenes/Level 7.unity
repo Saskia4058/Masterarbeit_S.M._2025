@@ -7078,7 +7078,8 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 37b0e63c02e74d340a1d1cd5e02a10a4, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -11903,7 +11904,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 6c151c1aaf7f03d4990824ac6de3ae0c, type: 3}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -14923,7 +14926,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 27b8618c0a0a4194aa565e054a1dc78f, type: 3}
+  - {fileID: 8300000, guid: 3fa25177bfd09ae4ab87c8e7042c9de2, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -19594,8 +19599,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - Bla Bla
-  audioClips: []
+  - Du kannst ans Gymnasium gehen.
+  - "Der Abschluss, die gymnasilae Maturit\xE4t, erm\xF6glicht dir den direkten Zugang
+    zu allen Universit\xE4ten."
+  - Die Ausbildung am Gymnasium dauert 4 Jahre.
+  - Es geht vor allem um die Vertiefung der Allgemeinbildung.
+  - "Es gibt verschiedene Schwerpunktf\xE4cher, mit denen du dich in einer Fachrichtung
+    vertiefen kannst."
+  audioClips:
+  - {fileID: 8300000, guid: b2a0de1ce971f384fa8e21133f5fce24, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: cce575983539b18459724cb13897be2b, type: 3}
+  - {fileID: 8300000, guid: 45e758cec8275bf4381912033c96bf8f, type: 3}
+  - {fileID: 8300000, guid: 53ecfebf035913c46ac4058864fa93ce, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21109,12 +21125,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1988665652}
   sentences:
-  - Hallo, ich bin Ben.
-  - "Ich m\xF6chte eine Lehre als Laborant EFZ machen."
-  - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
-  - "Daf\xFCr brauche ich eine Matur."
-  - Kann ich eine Lehre mit Matura machen?
-  audioClips: []
+  - Ich bin Amir.
+  - "Ich m\xF6chte an die Universit\xE4t, um in der Forschung zu arbeiten."
+  - In der Schule bin ich sehr gut.
+  - Welche Schule kann ich nach der Sekundarschule besuchen, um direkt an die Uni
+    zu kommen?
+  audioClips:
+  - {fileID: 8300000, guid: df3b2fdefb7c50b40bfae5424ca4534a, type: 3}
+  - {fileID: 8300000, guid: 6c18322ca1915a343bcf0d273f6b8f89, type: 3}
+  - {fileID: 8300000, guid: 74e92aff8ba86174fb784f56a0097488, type: 3}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -22691,7 +22711,9 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips: []
+  audioClips:
+  - {fileID: 0}
+  - {fileID: 0}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}
