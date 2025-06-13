@@ -10,13 +10,20 @@ public class ButtonHomeFunction : MonoBehaviour
 {
     private AudioSource audioSource;
     private Button button;
+    [SerializeField] private GameObject panelHome;
 
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         button = GetComponent<Button>();
 
-        button.onClick.AddListener(PlayClickSound);
+        button.onClick.AddListener(OnButtonClick);
+    }
+
+    void OnButtonClick()
+    {
+        PlayClickSound();
+        ShowPanelHome();
     }
 
     void PlayClickSound()
@@ -28,6 +35,18 @@ public class ButtonHomeFunction : MonoBehaviour
         else
         {
             Debug.LogWarning("AudioSource oder AudioClip fehlt auf ButtonHome.");
+        }
+    }
+
+    void ShowPanelHome()
+    {
+        if (panelHome != null)
+        {
+            panelHome.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("PanelHome ist im Inspector nicht zugewiesen.");
         }
     }
 }
