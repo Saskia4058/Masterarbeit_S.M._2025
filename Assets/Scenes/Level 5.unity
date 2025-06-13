@@ -6609,11 +6609,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 652964172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5aa387febc9a0b48a00b3911d9d556c, type: 3}
+  m_Script: {fileID: 11500000, guid: 48697a9ba9694c148a24daa42f4fa8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   multiSelectButtons: {fileID: 1032467435}
-  buttonWMS: {fileID: 1146318308}
+  buttonEBA: {fileID: 1837643170}
+  buttonEFZ: {fileID: 1927199448}
+  buttonBM2: {fileID: 1135797143}
+  buttonFH: {fileID: 550051459}
   buttonNext: {fileID: 420666346}
   speechBubbleTrue: {fileID: 667384952}
   speechBubbleFalse: {fileID: 1402002837}
@@ -6950,7 +6953,8 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 1214eecfd49dc3b41b81aebda1bae7f0, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -11727,7 +11731,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 0b66e2b6a0a3cf541b421a75b45e1450, type: 3}
+  - {fileID: 8300000, guid: 21f8a97ba17fda9439099198fa7a9990, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -14823,7 +14829,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: e2946704ce4661148b14fded4477e827, type: 3}
+  - {fileID: 8300000, guid: b836082d53368684096654ac27cb7416, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -19545,10 +19553,17 @@ MonoBehaviour:
   - Du kannst zuerst eine EBA-Lehre machen.
   - "Die EBA-Lehre ist f\xFCr Personen, die in der Schule Schwierigkeiten haben."
   - Nach der EBA-Lehre kannst du eine EFZ-Lehre machen.
-  - "Nach der EFZ-Lehre kannst du die Berufsmaturit\xE4t BM2 machen - Voll- oder
-    Teilzeit."
+  - "Nach der EFZ-Lehre kannst du die Berufsmaturit\xE4t ,BM2,  machen."
+  - "Die BM2 ist f\xFCr Leute mit einem EFZ, die nach der Lehre die Matura machen
+    wollen."
   - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule studieren."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 9e6402ac66b59bc4c97bbfa03a8a0756, type: 3}
+  - {fileID: 8300000, guid: e3e3519ce3534294db895591696102cb, type: 3}
+  - {fileID: 8300000, guid: 2018e98e4b6fc544f9d68793f3397995, type: 3}
+  - {fileID: 8300000, guid: 65d72c2a2b298df40ba703cbea7a674a, type: 3}
+  - {fileID: 8300000, guid: 52f6e7fc6547b1941ad8045a66f9dffc, type: 3}
+  - {fileID: 8300000, guid: 32012f824c0dbea44bfa16a27c7e7404, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21068,9 +21083,21 @@ MonoBehaviour:
   - "Deshalb m\xF6chte ich mein Ziel Schritt f\xFCr Schritt erreichen."
   - "Nach der Schule m\xF6chte ich zuerst einen Beruf erlernen."
   - "Gut w\xE4re eine Lehre, in der ich einfache Anforderungen lerne."
-  - Welchen Weg kann ich nach der Schule gehen, um mein Wunschzielk, die Fachhochschule,
+  - Danach darf es eine etwas schwierigere Ausbildung sein.
+  - "Ich brauche sp\xE4ter auch eine Matura. Am besten eine, die ich nach der Lehre
+    machen kann."
+  - Welchen Weg kann ich nach der Schule gehen, um mein Wunschziel, die Fachhochschule,
     zu erreichen?
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 443ab3fc8c863e84b894ad609319fbbe, type: 3}
+  - {fileID: 8300000, guid: b777a6ee7af92794db9b5a2223a25397, type: 3}
+  - {fileID: 8300000, guid: 0f0c606ec2389c6488f6643c804ab0f2, type: 3}
+  - {fileID: 8300000, guid: b9a361f9596fb2e468cb9ddafa0307ff, type: 3}
+  - {fileID: 8300000, guid: ebdce7067d3aade48b24598d290283a2, type: 3}
+  - {fileID: 8300000, guid: 4393c2614625c0a45b6606c93888c1c9, type: 3}
+  - {fileID: 8300000, guid: 689d11eb0c0294c459c7be7bf29ed142, type: 3}
+  - {fileID: 8300000, guid: 719f88fc75d271e45af70c97a25dce80, type: 3}
+  - {fileID: 8300000, guid: b1ed6fdbfc86bb7459a295ae763c7d28, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -22832,7 +22859,9 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 981e97b94c98899448a71e6c55f94f71, type: 3}
+  - {fileID: 8300000, guid: a87f052b077f63e449c6bd227b96b66d, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}
