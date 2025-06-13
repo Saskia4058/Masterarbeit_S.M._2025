@@ -20378,10 +20378,11 @@ MonoBehaviour:
   - "In einer Lehre lernst du alles Wichtige f\xFCr das Arbeiten in einem Beruf."
   - Es gibt 180 Berufe mit EFZ, die du nach der Schule erlernen kannst.
   audioClips:
-  - {fileID: 8300000, guid: 438b4acd47e52bc44a71cae05c61bb60, type: 3}
-  - {fileID: 8300000, guid: 25144b37cae16fc4584286def4439170, type: 3}
-  - {fileID: 8300000, guid: 0555bec674171b14380cb7cacc8bf002, type: 3}
-  - {fileID: 8300000, guid: 4823779baf1fb8a4286bc0f76ef3542b, type: 3}
+  - {fileID: 8300000, guid: 9fa0cc14321faad4787ec63b31761bc6, type: 3}
+  - {fileID: 8300000, guid: 6b9202f4ac0e88342b451f0ce534b769, type: 3}
+  - {fileID: 8300000, guid: ad8441d3fe2778742aaaf4c4e919c051, type: 3}
+  - {fileID: 8300000, guid: 743274eb84ccd3549abb4d6daed553e0, type: 3}
+  - {fileID: 8300000, guid: 4b02625594ca9bd42974f76924ca2d8a, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}

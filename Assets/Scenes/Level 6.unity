@@ -11991,7 +11991,7 @@ MonoBehaviour:
   - "Hier die L\xF6sung."
   audioClips:
   - {fileID: 8300000, guid: c56c0a0131f0f8e4e850ab49eac98f17, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e40a9449e63e464db7ab36427c7cd55, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -19786,12 +19786,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1307153067}
   sentences:
-  - "Du kannst \xFCber die Fachmittelschule FMS an die Fachhochschule FH."
+  - "Du kannst \xFCber die Fachmittelschule (FMS) an die Fachhochschule (FH)."
   - Die Ausbildung an einer FMS vertieft das Allgemeinwissen und berufsspezifische
     Kenntnisse.
   - "Der erste Teil dauert 3 Jahre und f\xFChrt zum Fachmittelschulausweis."
   - "Danach kannst du ein weiteres Jahr machen und die Fachmaturit\xE4t erwerben."
-  - Damit kannst du an einer Fachhochschule FH studieren.
+  - Damit kannst du an einer Fachhochschule (FH) studieren.
   audioClips:
   - {fileID: 8300000, guid: 2f4e2575bfb9abf49bf007d28eb93f54, type: 3}
   - {fileID: 8300000, guid: fb238f5a28ba8b04487a80bd6e0e91a0, type: 3}
@@ -21312,10 +21312,10 @@ MonoBehaviour:
   dialogText: {fileID: 1988665652}
   sentences:
   - Hallo, ich bin Tine.
-  - "Ich m\xF6chte an die Fachmittelschule FMS gehen."
-  - "Nach der FMS m\xF6chte ich Medizininformatik an der Fachhochschule FH studieren."
+  - "Ich m\xF6chte an die Fachmittelschule (FMS) gehen."
+  - "Nach der FMS m\xF6chte ich Medizininformatik an der Fachhochschule (FH) studieren."
   - "Kann ich dieses Ziel \xFCber die FMS erreichen?"
-  - Wie sieht mein Weg bis zur Fachhochschule FH aus?
+  - Wie sieht mein Weg bis zur Fachhochschule (FH) aus?
   audioClips:
   - {fileID: 8300000, guid: 27d1b63d95f89e244baf3b50d7b4f8e4, type: 3}
   - {fileID: 8300000, guid: 03bf811d1c818aa408bbbf1dd2f8d938, type: 3}
@@ -22899,8 +22899,8 @@ MonoBehaviour:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 516120b9ce3480e4e97903a4ab13bb2f, type: 3}
+  - {fileID: 8300000, guid: 1105517a556a56b43b5bb76f492b5dec, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

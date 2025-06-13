@@ -21701,7 +21701,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0a61053739375d940ad2e26c489291e8, type: 3}
   - {fileID: 8300000, guid: 3934db63f85a5574997707011a979487, type: 3}
   - {fileID: 8300000, guid: 47b6e7939db51dc4c8920fe59c8e6efc, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b6627a528b2d8bc448e6f4de959e54e8, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}

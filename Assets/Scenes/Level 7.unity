@@ -11906,7 +11906,7 @@ MonoBehaviour:
   - "Hier die L\xF6sung."
   audioClips:
   - {fileID: 8300000, guid: 6c151c1aaf7f03d4990824ac6de3ae0c, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 9ddb5965931d0f64d979b3a90aab37a4, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -19600,7 +19600,7 @@ MonoBehaviour:
   dialogText: {fileID: 1307153067}
   sentences:
   - Du kannst ans Gymnasium gehen.
-  - "Der Abschluss, die gymnasilae Maturit\xE4t, erm\xF6glicht dir den direkten Zugang
+  - "Der Abschluss, die gymnasiale Maturit\xE4t, erm\xF6glicht dir den direkten Zugang
     zu allen Universit\xE4ten."
   - Die Ausbildung am Gymnasium dauert 4 Jahre.
   - Es geht vor allem um die Vertiefung der Allgemeinbildung.
@@ -19608,7 +19608,7 @@ MonoBehaviour:
     vertiefen kannst."
   audioClips:
   - {fileID: 8300000, guid: b2a0de1ce971f384fa8e21133f5fce24, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: dc63ca660e7d44f4fb4455b0eb13e2c6, type: 3}
   - {fileID: 8300000, guid: cce575983539b18459724cb13897be2b, type: 3}
   - {fileID: 8300000, guid: 45e758cec8275bf4381912033c96bf8f, type: 3}
   - {fileID: 8300000, guid: 53ecfebf035913c46ac4058864fa93ce, type: 3}
@@ -21134,7 +21134,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: df3b2fdefb7c50b40bfae5424ca4534a, type: 3}
   - {fileID: 8300000, guid: 6c18322ca1915a343bcf0d273f6b8f89, type: 3}
   - {fileID: 8300000, guid: 74e92aff8ba86174fb784f56a0097488, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: ea477168b5dd0dc4d8da604786dfbe3f, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -22712,8 +22712,8 @@ MonoBehaviour:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f31c939446633c342b2d56edf727abfd, type: 3}
+  - {fileID: 8300000, guid: 146e104832b98a84dac9d0ab71d1cba4, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

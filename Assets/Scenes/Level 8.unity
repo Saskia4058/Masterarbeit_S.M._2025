@@ -11974,6 +11974,7 @@ MonoBehaviour:
   - "Hier die L\xF6sung."
   audioClips:
   - {fileID: 8300000, guid: cf9701ceb10b7e54882a3f840ed19eb3, type: 3}
+  - {fileID: 8300000, guid: 496ee5d8570bbe649b6500840da6c0e0, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
