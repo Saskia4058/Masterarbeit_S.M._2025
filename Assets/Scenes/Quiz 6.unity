@@ -4154,7 +4154,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 0}
   delayBetweenLetters: 0.05
-  delayBetweenSentences: 1.5
+  delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
 --- !u!1 &1909323288
 GameObject:

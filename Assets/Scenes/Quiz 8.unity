@@ -4163,7 +4163,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bf865e285b7a1614f848222333c3fa8a, type: 3}
   - {fileID: 8300000, guid: 341565addeefc11469c3d0da9926e6a2, type: 3}
   delayBetweenLetters: 0.05
-  delayBetweenSentences: 1.5
+  delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
 --- !u!1 &1909323288
 GameObject:
