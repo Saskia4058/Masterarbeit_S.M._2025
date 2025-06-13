@@ -4,26 +4,31 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-[RequireComponent(typeof(AudioSource))]
 public class ButtonHomeFunction : MonoBehaviour
 {
-    private AudioSource audioSource;
-    private Button button;
     [SerializeField] private GameObject panelHome;
+    [SerializeField] private AudioSource audioSource;
 
-    void Awake()
+    void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        button = GetComponent<Button>();
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
 
-        button.onClick.AddListener(OnButtonClick);
+        // ➕ Wichtig: Klickgeräusch auch bei Pause abspielbar machen
+        audioSource.ignoreListenerPause = true;
     }
 
-    void OnButtonClick()
+    public void OnButtonHomeClick()
     {
         PlayClickSound();
-        ShowPanelHome();
+        Invoke(nameof(PauseAndShow), 0.05f);
+    }
+
+    public void OnButtonGoOnClick()
+    {
+        ResumeGame();
     }
 
     void PlayClickSound()
@@ -32,21 +37,27 @@ public class ButtonHomeFunction : MonoBehaviour
         {
             audioSource.Play();
         }
-        else
-        {
-            Debug.LogWarning("AudioSource oder AudioClip fehlt auf ButtonHome.");
-        }
     }
 
-    void ShowPanelHome()
+    void PauseAndShow()
     {
         if (panelHome != null)
         {
             panelHome.SetActive(true);
         }
-        else
+
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
+    }
+
+    void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+
+        if (panelHome != null)
         {
-            Debug.LogWarning("PanelHome ist im Inspector nicht zugewiesen.");
+            panelHome.SetActive(false);
         }
     }
 }

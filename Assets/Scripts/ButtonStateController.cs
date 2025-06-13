@@ -9,7 +9,7 @@ public class ButtonStateController : MonoBehaviour
 
     private readonly HashSet<string> excludedButtons = new()
     {
-        "ButtonWeiter", "ButtonHome", "ButtonYes", "ButtonNo"
+        "ButtonWeiter", "ButtonHome", "ButtonYes", "ButtonNo", "ButtonGoOn", "ButtonFin"
     };
 
     void Start()

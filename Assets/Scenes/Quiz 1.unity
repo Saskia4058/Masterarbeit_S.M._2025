@@ -2039,7 +2039,9 @@ MonoBehaviour:
   - "Super, du hast die Aufgabe richtig gel\xF6st!"
   - "Der Abschluss nach einer 3- oder 4-j\xE4hrigen Lehre heisst \"Eidg. F\xE4higkeitszeugnis
     EFZ\"."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 0fc693e233e0d9747830fd180aafa120, type: 3}
+  - {fileID: 8300000, guid: 5c1b361a89b52ba46bdb6764675da039, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -3549,7 +3551,9 @@ MonoBehaviour:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Der Abschluss nach einer 3- oder 4-j\xE4hrigen Lehre heisst \"Eidg. F\xE4higkeitszeugnis
     EFZ\"."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 2b7d02d37cd9e0e46a4f6ab00762edb6, type: 3}
+  - {fileID: 8300000, guid: 5c1b361a89b52ba46bdb6764675da039, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -4100,7 +4104,12 @@ MonoBehaviour:
   - ' 1. Frage: Wie heisst der Abschluss nach einer Lehre, die 3 oder 4 Jahre dauert?'
   - "A) Eidg. Berufsattest EBA\nB) Fachmaturit\xE4t"
   - "C) Eidg. F\xE4higkeitszeugnis EFZ\nD) Berufsmaturit\xE4t"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: ed343b4939a8b9a489f2e58fe515159a, type: 3}
+  - {fileID: 8300000, guid: a0fde78fe82eb134f8e66086a0291033, type: 3}
+  - {fileID: 8300000, guid: 69b4fdf4630bf4541a5ee58e5394500f, type: 3}
+  - {fileID: 8300000, guid: 7a8cd2d8fbe38c440841d634a7f011ce, type: 3}
+  - {fileID: 8300000, guid: a201f835c4efab24fa5175b4b54c57fb, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   replayButton: {fileID: 1505370020}
