@@ -7092,7 +7092,8 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: b0955af6e65c54d48b95898bbe76df90, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -11917,7 +11918,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: fbe9ae4928547874492244d9674091b2, type: 3}
+  - {fileID: 8300000, guid: ff879417eaba7c542a66d6ccfb556562, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -14937,7 +14940,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 530769933482bf9409e9491d1a6c61d3, type: 3}
+  - {fileID: 8300000, guid: c0b1541f0f9bdec48b333e6b46c39deb, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -19612,7 +19617,11 @@ MonoBehaviour:
   - "Mit der Berufsmaturit\xE4t kannst du an einer Fachhochschule (FH) studieren."
   - "Es gibt 5 Ausrichtungen der Berufsmaturit\xE4t."
   - Sie verbindet berufliche Kenntnisse mit einer vertieften Allgemeinbildung.
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: c00a28b6581ba6e4bb38136721848d57, type: 3}
+  - {fileID: 8300000, guid: ae6b00a4a732cff4f8f68b6550364a89, type: 3}
+  - {fileID: 8300000, guid: e93c8b72d2600814db21a52543b749e5, type: 3}
+  - {fileID: 8300000, guid: d905195f059141642ae328ff5c8cae41, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21131,7 +21140,12 @@ MonoBehaviour:
   - "Nach der Lehre m\xF6chte ich Chemie an der Fachhochschule FH studieren."
   - "Daf\xFCr brauche ich eine Matur."
   - Kann ich eine Lehre mit Matura machen und dann an die Fachhochschule (FH) gehen?
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 5a6d87ebce4ca434eaf53d8ca2c2d8c9, type: 3}
+  - {fileID: 8300000, guid: cdb10a01d163f664a896cc20d1e87814, type: 3}
+  - {fileID: 8300000, guid: 234ce8376aa684f478b4f09e23807b6c, type: 3}
+  - {fileID: 8300000, guid: c3a9bc96cfdf69b47be67a45b5bc2f45, type: 3}
+  - {fileID: 8300000, guid: a6a0dc0fd02fbd843810a0dff65c4490, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -22754,7 +22768,9 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: a6779a1706117c341a91a32f2f668b84, type: 3}
+  - {fileID: 8300000, guid: 6b5b107514d296546a395da6d1c882a9, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

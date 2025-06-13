@@ -1816,7 +1816,9 @@ MonoBehaviour:
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Es ist m\xF6glich, eine EFZ-Lehre mit Berufsmaturit\xE4t (BM1) zu absolvieren."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: b0955af6e65c54d48b95898bbe76df90, type: 3}
+  - {fileID: 8300000, guid: 4e5770d015394094ab813ea92c9522d9, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -3252,7 +3254,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Es ist m\xF6glich, eine EFZ-Lehre mit Berufsmaturit\xE4t (BM1) zu absolvieren."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 530769933482bf9409e9491d1a6c61d3, type: 3}
+  - {fileID: 8300000, guid: 4e5770d015394094ab813ea92c9522d9, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -4090,9 +4094,13 @@ MonoBehaviour:
   sentences:
   - "N\xE4chste Frage."
   - "Ist es m\xF6glich, eine EFZ-Lehre mit Matura zu machen?"
-  - A) Ja
-  - B) Nein
-  audioClips: []
+  - 'A) Ja
+
+    B) Nein'
+  audioClips:
+  - {fileID: 8300000, guid: 87f904c8fc9482242af600bf82ba299e, type: 3}
+  - {fileID: 8300000, guid: efa6c96c992efeb48887edd356f859bc, type: 3}
+  - {fileID: 8300000, guid: 13c30a46007f1f741b14dce542b54e93, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
