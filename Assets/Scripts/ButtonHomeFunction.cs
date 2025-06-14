@@ -16,8 +16,28 @@ public class ButtonHomeFunction : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
         }
 
-        // ➕ Wichtig: Klickgeräusch auch bei Pause abspielbar machen
         audioSource.ignoreListenerPause = true;
+
+        if (panelHome != null)
+        {
+            Transform buttonsPanel = panelHome.transform.Find("ButtonsPanel");
+
+            if (buttonsPanel != null)
+            {
+                Button buttonGoOn = buttonsPanel.Find("ButtonGoOn")?.GetComponent<Button>();
+                Button buttonFin = buttonsPanel.Find("ButtonFin")?.GetComponent<Button>();
+
+                if (buttonGoOn != null)
+                    buttonGoOn.onClick.AddListener(PlayClickSound);
+
+                if (buttonFin != null)
+                    buttonFin.onClick.AddListener(PlayClickSound);
+            }
+            else
+            {
+                Debug.LogWarning("ButtonsPanel nicht gefunden!");
+            }
+        }
     }
 
     public void OnButtonHomeClick()

@@ -4304,7 +4304,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 974538b6fd819364d8980ed572268a1c, type: 3}
+  - {fileID: 8300000, guid: 0f098ebb8f7ec58428c81f05f3ea2dd2, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 188849900}
@@ -8649,10 +8651,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.28415084, g: 0.5739889, b: 0.5999999, a: 1}
-    m_PressedColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 1}
-    m_SelectedColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 1}
-    m_DisabledColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 0.5019608}
+    m_HighlightedColor: {r: 0.37588462, g: 0.44851393, b: 0.4943396, a: 0.8627451}
+    m_PressedColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
+    m_SelectedColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
+    m_DisabledColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -8915,7 +8917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0627451, b: 0.26666668, a: 0.8627451}
+  m_Color: {r: 0, g: 0.16470589, b: 0.26666668, a: 0.8627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9415,8 +9417,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubbleTrue: {fileID: 667384952}
+  speechBubbleFalse: {fileID: 1402002837}
+  speechBubbleFalse2: {fileID: 321317031}
   scoreText: {fileID: 1291382807}
   pointSound: {fileID: 814019850}
+  falseSoundClip: {fileID: 8300000, guid: a78e9bf8f54b2604e83e1bf35352ec69, type: 3}
 --- !u!4 &814019849
 Transform:
   m_ObjectHideFlags: 0
@@ -9445,7 +9450,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b288fb0e26865334da44172ffd613c4d, type: 3}
   m_Resource: {fileID: 8300000, guid: b288fb0e26865334da44172ffd613c4d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11366,7 +11371,6 @@ GameObject:
   - component: {fileID: 1032467434}
   - component: {fileID: 1032467435}
   - component: {fileID: 1032467436}
-  - component: {fileID: 1032467437}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -11589,18 +11593,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1032467437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032467433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b0c1c2552cf6a04baa3df596a644890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1046669811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5622073686965503229, guid: 206e6480baf1cef4c92cdf25606cd935,
@@ -17464,10 +17456,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 1}
-    m_PressedColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 1}
-    m_SelectedColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 1}
-    m_DisabledColor: {r: 0.28235295, g: 0.57254905, b: 0.6, a: 0.5019608}
+    m_HighlightedColor: {r: 0.3764706, g: 0.44705883, b: 0.49411765, a: 0.8627451}
+    m_PressedColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
+    m_SelectedColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
+    m_DisabledColor: {r: 0.37647063, g: 0.44705886, b: 0.49411768, a: 0.8627451}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:

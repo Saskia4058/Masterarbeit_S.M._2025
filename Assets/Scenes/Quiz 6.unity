@@ -1963,7 +1963,9 @@ MonoBehaviour:
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Nach 4 Jahren Fachmittelschule kannst du die Fachmaturit\xE4t machen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: f846568ff0fabf742bfad7944b489d68, type: 3}
+  - {fileID: 8300000, guid: 06218896b4754244790d7887489384e1, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -2530,8 +2532,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubbleTrue: {fileID: 667384952}
+  speechBubbleFalse: {fileID: 1402002837}
+  speechBubbleFalse2: {fileID: 0}
   scoreText: {fileID: 677785797}
   pointSound: {fileID: 732820597}
+  falseSoundClip: {fileID: 8300000, guid: a78e9bf8f54b2604e83e1bf35352ec69, type: 3}
 --- !u!4 &732820596
 Transform:
   m_ObjectHideFlags: 0
@@ -2560,7 +2565,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b288fb0e26865334da44172ffd613c4d, type: 3}
   m_Resource: {fileID: 8300000, guid: b288fb0e26865334da44172ffd613c4d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3475,7 +3480,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Nach 4 Jahren Fachmittelschule kannst du die Fachmaturit\xE4t machen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 79434521727b77749855b13eaa6a5e96, type: 3}
+  - {fileID: 8300000, guid: 06218896b4754244790d7887489384e1, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -4152,7 +4159,10 @@ MonoBehaviour:
 
     D) 5 Jahre'
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 6d1a11116921f19418e274f8ce151e36, type: 3}
+  - {fileID: 8300000, guid: 1a3ff5bd1c3419d4a9f3757a7fe8756d, type: 3}
+  - {fileID: 8300000, guid: 778f7ea31490dce4b9e16141646f5326, type: 3}
+  - {fileID: 8300000, guid: 81fbbb4f61d714a4ea762db391efe0e5, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
