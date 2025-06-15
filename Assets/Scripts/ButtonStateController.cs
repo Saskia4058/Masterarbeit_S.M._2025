@@ -1,103 +1,57 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class ButtonStateController : MonoBehaviour
 {
-    private Button replayButton;
-    private GameObject speechBubbles;
+    [Header("Referenzen")]
+    [SerializeField] private GameObject buttonsParent; // "Buttons"
+    [SerializeField] private GameObject buttonReplay;  // "ButtonReplay"
 
-    public GameObject speechBubbleExplain; // Im Inspector zuweisen
-
-    private bool hasNextBeenClicked = false;
-
-    private readonly HashSet<string> excludedButtons = new()
-    {
-        "ButtonWeiter", "ButtonHome", "ButtonYes", "ButtonNo", "ButtonGoOn", "ButtonFin"
-    };
+    private List<Button> buttons = new List<Button>();
 
     void Start()
     {
-        speechBubbles = GameObject.Find("Content/SpeechBubbles");
-        if (speechBubbles == null) return;
-
-        Transform sbExercise = speechBubbles.transform.Find("SpeechBubbleExercise");
-        if (sbExercise != null)
+        if (buttonsParent != null)
         {
-            Transform rb = sbExercise.Find("ButtonReplay");
-            if (rb != null)
+            buttons.AddRange(buttonsParent.GetComponentsInChildren<Button>());
+
+            foreach (var button in buttons)
             {
-                replayButton = rb.GetComponent<Button>();
+                button.interactable = false;
             }
         }
-
-        Button buttonNext = GameObject.Find("ButtonNext")?.GetComponent<Button>();
-        if (buttonNext != null)
+        else
         {
-            buttonNext.onClick.AddListener(() => hasNextBeenClicked = true);
+            Debug.LogWarning("Buttons Parent ist nicht zugewiesen!");
         }
     }
 
     void Update()
     {
-        // Wenn Lösung gerade angezeigt wird, keine Button-Steuerung durch dieses Script
-        if (speechBubbleExplain != null && speechBubbleExplain.activeSelf)
+        TryActivateButtons();
+    }
+
+    private void TryActivateButtons()
+    {
+        if (buttonReplay != null && buttonReplay.activeSelf)
         {
-            return;
+            foreach (var button in buttons)
+            {
+                button.interactable = true;
+            }
         }
-
-        if (hasNextBeenClicked)
+        else
         {
-            DisableSelectableButtonsWithoutGreyingOut();
-            return;
-        }
-
-        if (replayButton == null || speechBubbles == null) return;
-
-        bool isReplayActive = replayButton.gameObject.activeInHierarchy;
-
-        bool isAnyBubbleActive =
-            speechBubbles.transform.Find("SpeechBubbleTrue")?.gameObject.activeInHierarchy == true ||
-            speechBubbles.transform.Find("SpeechBubbleFalse")?.gameObject.activeInHierarchy == true ||
-            speechBubbles.transform.Find("SpeechBubbleFalse2")?.gameObject.activeInHierarchy == true ||
-            speechBubbles.transform.Find("SpeechBubbleAgain")?.gameObject.activeInHierarchy == true;
-
-        bool shouldBeInteractable = isReplayActive && !isAnyBubbleActive;
-
-        foreach (Button btn in Object.FindObjectsByType<Button>(FindObjectsSortMode.None))
-        {
-            if (excludedButtons.Contains(btn.name))
-                continue;
-
-            btn.interactable = shouldBeInteractable;
+            foreach (var button in buttons)
+            {
+                button.interactable = false;
+            }
         }
     }
 
-    private void DisableSelectableButtonsWithoutGreyingOut()
+    public void ReactivateButtonsIfReplayActive()
     {
-        foreach (Button btn in Object.FindObjectsByType<Button>(FindObjectsSortMode.None))
-        {
-            if (excludedButtons.Contains(btn.name))
-                continue;
-
-            var cb = btn.colors;
-
-            bool isSelected = UnityEngine.EventSystems.EventSystem.current != null &&
-                              UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject == btn.gameObject;
-
-            Color visibleColor = isSelected ? cb.selectedColor : cb.normalColor;
-
-            // Setze alle relevanten Farbzustände auf die aktuelle sichtbare Farbe,
-            // damit Buttons optisch unverändert bleiben, obwohl deaktiviert
-            cb.normalColor = visibleColor;
-            cb.highlightedColor = visibleColor;
-            cb.pressedColor = visibleColor;
-            cb.selectedColor = visibleColor;
-            cb.disabledColor = visibleColor;
-
-            btn.colors = cb;
-
-            btn.interactable = false;
-        }
+        TryActivateButtons();
     }
 }

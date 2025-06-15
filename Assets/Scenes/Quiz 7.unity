@@ -2040,7 +2040,9 @@ MonoBehaviour:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
     an die Universit\xE4t gehen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 37b0e63c02e74d340a1d1cd5e02a10a4, type: 3}
+  - {fileID: 8300000, guid: 3db4143a51eab5944bd1064dacb9181d, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -3370,7 +3372,9 @@ MonoBehaviour:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Mit dem Abschluss am Gymnasium, der gymnasialen Maturit\xE4t, kannst du direkt
     an die Universit\xE4t gehen."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 27b8618c0a0a4194aa565e054a1dc78f, type: 3}
+  - {fileID: 8300000, guid: 3db4143a51eab5944bd1064dacb9181d, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -4104,10 +4108,17 @@ MonoBehaviour:
   - "Hier kommt die n\xE4chste Frage!"
   - "Welcher Abschluss erm\xF6glicht dir den direkten Zugang zu allen Studieng\xE4ngen
     an Universit\xE4ten?"
-  - "A) Gymnasiale Maturit\xE4t (Gymnasium)\nB) Fachmaturit\xE4t (FMS)"
-  - "C) Berufsmaturit\xE4t\nD) Alle drei Maturit\xE4tsabschl\xFCsse"
+  - "A) Gymnasiale Maturit\xE4t (Gymnasium)"
+  - "B) Fachmaturit\xE4t (FMS)"
+  - "C) Berufsmaturit\xE4t"
+  - "D) Alle drei Maturit\xE4tsabschl\xFCsse"
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a64d2764cf08fb24290921285828000d, type: 3}
+  - {fileID: 8300000, guid: a104b1a343b122541a1c9a69109e45ed, type: 3}
+  - {fileID: 8300000, guid: b19eee9d443f5c54492df24e39076839, type: 3}
+  - {fileID: 8300000, guid: e9851d2f6fad0f747825dc93c7ba7f9c, type: 3}
+  - {fileID: 8300000, guid: f1077a9d40b108248883f469a46f3e69, type: 3}
+  - {fileID: 8300000, guid: 37d113e5ab82ea646bbd00004b3c337f, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}

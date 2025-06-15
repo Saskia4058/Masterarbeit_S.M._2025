@@ -7113,7 +7113,8 @@ MonoBehaviour:
   dialogText: {fileID: 104755821}
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 4e9f4a9bbbe007b44b8c080974c6736c, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -11893,7 +11894,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 3b90033cc2145d84798bd0959a1f6673, type: 3}
+  - {fileID: 8300000, guid: 5207efd08421fab40901781ae8de1199, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1007920335}
@@ -15149,7 +15152,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig!
   - "Soll ich dir die L\xF6sung sagen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 55b0aedf1ceefd34c973481b1a67919c, type: 3}
+  - {fileID: 8300000, guid: 06e1e8e4a22d07f4882b697c5fbc7e42, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 652825952}
@@ -19947,7 +19952,11 @@ MonoBehaviour:
   - "Sie f\xFChrt zu zwei Abschl\xFCssen: Kauffrau/Kaufmann EFZ und Berufsmaturit\xE4t."
   - "Nach der WMS kannst du in einem kaufm\xE4nnischen Beruf arbeiten oder an einer
     Fachhochschule (FH) studieren."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 0090de6a40d6d4947862be6c7769eba9, type: 3}
+  - {fileID: 8300000, guid: 963e0e912e8b55949924cbac0c3354d6, type: 3}
+  - {fileID: 8300000, guid: 3c440be504af6054abe903fa564e54c3, type: 3}
+  - {fileID: 8300000, guid: 29a781cf6dda2ab4fa53ffb527267aba, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1802069021}
@@ -21469,7 +21478,12 @@ MonoBehaviour:
     gehen."
   - "Ist es m\xF6glich, \xFCber eine Schule Kauffrau EFZ zu werden? Und gleichzeitig
     die Matur zu erlangen?"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: bae21d15847875f4783e20553f016b00, type: 3}
+  - {fileID: 8300000, guid: 90269244a32f6cf49bfbf7ff96220a6a, type: 3}
+  - {fileID: 8300000, guid: 8b5aaac5c42f62f44bfd8cf8a6b00d6d, type: 3}
+  - {fileID: 8300000, guid: cea0ea85dc211bc47bb1d256d21e41dd, type: 3}
+  - {fileID: 8300000, guid: b7bba20143aa03f4c9a9347019c5a6e3, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
@@ -23046,7 +23060,9 @@ MonoBehaviour:
   sentences:
   - Komm, dann versuch's noch mal!
   - "H\xF6r dir die Aufgabe noch einmal ganz genau an!"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 54fd5cf986102d346a31c7efe74dfac1, type: 3}
+  - {fileID: 8300000, guid: 6be3cc79691cabc438949484a5ea54b4, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   buttonYes: {fileID: 0}

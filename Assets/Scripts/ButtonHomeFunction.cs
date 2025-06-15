@@ -19,36 +19,9 @@ public class ButtonHomeFunction : MonoBehaviour
     [SerializeField] private Button buttonGoOn;
     [SerializeField] private Button buttonFin;
 
-    [SerializeField] private GameObject buttonsParent; // "Buttons" GameObject im Inspector zuweisen
+    [SerializeField] private GameObject buttonsParent; // GameObject "Buttons" im Inspector zuweisen
 
     private bool isGamePaused = false;
-
-    // Liste aller Button-Namen, die deaktiviert/aktiviert werden sollen
-    private readonly List<string> buttonNamesToToggle = new List<string>
-    {
-        "ButtonBrA",
-        "ButtonEBA",
-        "ButtonEFZ",
-        "ButtonBM1",
-        "ButtonBM2",
-        "ButtonWMS",
-        "ButtonFMS",
-        "ButtonFaMa",
-        "ButtonGYM",
-        "ButtonPasserelle",
-        "ButtonPraxis",
-        "ButtonBP",
-        "ButtonHFP",
-        "ButtonHF",
-        "ButtonNDS",
-        "ButtonKurs",
-        "ButtonUNI",
-        "ButtonPH",
-        "ButtonFH",
-        "ButtonCAS",
-        "ButtonPHD",
-        "ButtonNext"
-    };
 
     void Awake()
     {
@@ -126,7 +99,7 @@ public class ButtonHomeFunction : MonoBehaviour
             AudioListener.pause = true;
             isGamePaused = true;
 
-            SetButtonsInteractable(false); // Buttons deaktivieren
+            SetButtonsInteractable(false); // Alle Buttons im GameObject "Buttons" deaktivieren
         }
     }
 
@@ -138,7 +111,7 @@ public class ButtonHomeFunction : MonoBehaviour
             AudioListener.pause = false;
             isGamePaused = false;
 
-            SetButtonsInteractable(true);  // Buttons wieder aktivieren
+            SetButtonsInteractable(true);  // Alle Buttons im GameObject "Buttons" wieder aktivieren
         }
     }
 
@@ -161,29 +134,15 @@ public class ButtonHomeFunction : MonoBehaviour
     {
         if (buttonsParent == null)
         {
-            Debug.LogWarning("ButtonsParent ist nicht zugewiesen.");
+            Debug.LogWarning("buttonsParent (GameObject 'Buttons') ist nicht zugewiesen.");
             return;
         }
 
-        foreach (var btnName in buttonNamesToToggle)
+        // Alle Button-Komponenten im Child-Hierarchiebaum deaktivieren/aktivieren
+        Button[] allButtons = buttonsParent.GetComponentsInChildren<Button>(includeInactive: true);
+        foreach (var btn in allButtons)
         {
-            Transform btnTransform = buttonsParent.transform.Find(btnName);
-            if (btnTransform != null)
-            {
-                Button btn = btnTransform.GetComponent<Button>();
-                if (btn != null)
-                {
-                    btn.interactable = interactable;
-                }
-                else
-                {
-                    Debug.LogWarning($"Button-Komponente fehlt bei '{btnName}'.");
-                }
-            }
-            else
-            {
-                Debug.LogWarning($"Button mit Namen '{btnName}' wurde nicht gefunden.");
-            }
+            btn.interactable = interactable;
         }
     }
 }

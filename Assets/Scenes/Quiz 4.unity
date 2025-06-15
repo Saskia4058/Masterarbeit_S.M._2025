@@ -2087,7 +2087,9 @@ MonoBehaviour:
   sentences:
   - "Super, du hast die Aufgabe richtig gel\xF6st."
   - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 4e9f4a9bbbe007b44b8c080974c6736c, type: 3}
+  - {fileID: 8300000, guid: db41136f9ab0c6e4e8813f03a9f9ed8e, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 43670039}
@@ -3789,7 +3791,9 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist leider nicht ganz richtig.
   - "Die WMS f\xFChrt zum Abschluss Kaufmann/-frau EFZ & Berufsmaturit\xE4t."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 55b0aedf1ceefd34c973481b1a67919c, type: 3}
+  - {fileID: 8300000, guid: db41136f9ab0c6e4e8813f03a9f9ed8e, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 705054782}
@@ -4384,10 +4388,17 @@ MonoBehaviour:
   - Jetzt gibt es noch einmal die Chance, Bonuspunkte zu sammeln!
   - "Die Wirtschaftsmittelschule WMS f\xFChrt zu zwei Abschl\xFCssen. Welche sind
     das?"
-  - "A) Kaufleute EFZ & Fachmaturit\xE4t\nB) Kaufleute EFZ & EBA"
-  - "C) Kaufleute EFZ & Wirtschaftmaturit\xE4t\nD) Kaufleute EFZ & Berufsmaturit\xE4t"
+  - "A) Kaufleute EFZ & Fachmaturit\xE4t"
+  - B) Kaufleute EFZ & EBA
+  - "C) Kaufleute EFZ & Wirtschaftsmaturit\xE4t\n"
+  - "D) Kaufleute EFZ & Berufsmaturit\xE4t"
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: fc4dd6b9c70e40f448e9c9d249680727, type: 3}
+  - {fileID: 8300000, guid: fa51238c560fa5a4ab531bdb262941c5, type: 3}
+  - {fileID: 8300000, guid: 07825cbf4135e3a489a5fcfd7835a45d, type: 3}
+  - {fileID: 8300000, guid: b842d8b33f4ae7047802018c49ab57bc, type: 3}
+  - {fileID: 8300000, guid: a3275a4bffd2a4a4da293fe9fc8a29a1, type: 3}
+  - {fileID: 8300000, guid: 3814a3b6f5b945b47bac7f242945af8f, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
   replayButton: {fileID: 1505370020}
