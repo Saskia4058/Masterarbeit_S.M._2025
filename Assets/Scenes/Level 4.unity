@@ -20833,16 +20833,16 @@ MonoBehaviour:
   sentences:
   - Du kannst die Wirtschaftsmittelschule (WMS) besuchen.
   - 'Das ist eine Ausbildung, die 4 Jahre dauert: 3 Jahre Schule und einem Jahr Berufspraktikum.'
-  - "Sie f\xFChrt zu zwei Abschl\xFCssen: Kauffrau/Kaufmann EFZ und Berufsmaturit\xE4t."
-  - "Nach der WMS kannst du in einem kaufm\xE4nnischen Beruf arbeiten oder an einer
-    Fachhochschule (FH) studieren."
+  - "Sie f\xFChrt zu zwei Abschl\xFCssen: Kauffrau/-mann EFZ und Berufsmaturit\xE4t."
+  - Nach der WMS kannst du in einem KV- Beruf arbeiten oder an einer Fachhochschule
+    (FH) studieren.
   audioClips:
   - {fileID: 8300000, guid: 0090de6a40d6d4947862be6c7769eba9, type: 3}
   - {fileID: 8300000, guid: 963e0e912e8b55949924cbac0c3354d6, type: 3}
   - {fileID: 8300000, guid: 3c440be504af6054abe903fa564e54c3, type: 3}
   - {fileID: 8300000, guid: 29a781cf6dda2ab4fa53ffb527267aba, type: 3}
   delayBetweenLetters: 0.05
-  delayBetweenSentences: 1.5
+  delayBetweenSentences: 2
   weiterButton: {fileID: 1802069021}
   speechBubbleExplain: {fileID: 0}
   speechBubbleExercise: {fileID: 1896349261}
@@ -22406,7 +22406,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cea0ea85dc211bc47bb1d256d21e41dd, type: 3}
   - {fileID: 8300000, guid: b7bba20143aa03f4c9a9347019c5a6e3, type: 3}
   delayBetweenLetters: 0.05
-  delayBetweenSentences: 2
+  delayBetweenSentences: 2.5
   ExerciseInteractionBlocker: {fileID: 900859665}
   replayButton: {fileID: 1505370020}
 --- !u!82 &1896349264
