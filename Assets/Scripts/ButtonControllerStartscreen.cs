@@ -54,7 +54,6 @@ public class ButtonControllerStartscreen : MonoBehaviour
             return;
         
         audioSource.PlayOneShot(clickSound);
-        Debug.Log("Sound wird abgespielt.");
 
         // Szene nach kurzer Verzögerung laden, um Sound abzuspielen
         Invoke(nameof(LoadScene), clickSound.length);
@@ -66,7 +65,6 @@ public class ButtonControllerStartscreen : MonoBehaviour
             return;
         
         audioSource.PlayOneShot(clickSound);
-        Debug.Log("Sound wird abgespielt.");
 
         // Spiel nach kurzer Verzögerung beenden, um Sound abzuspielen
         Invoke(nameof(ExitGame), clickSound.length);

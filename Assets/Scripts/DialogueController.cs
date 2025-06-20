@@ -15,6 +15,8 @@ public class DialogueController : MonoBehaviour
     public float delayBetweenLetters = 0.05f;
     public float delayBetweenSentences = 1.5f;
 
+    public GameObject ExerciseInteractionBlocker;
+
     private int currentSentenceIndex = 0;
     private Coroutine dialogueCoroutine;
 
@@ -36,6 +38,18 @@ public class DialogueController : MonoBehaviour
             replayButton.onClick.AddListener(OnReplayButtonClicked);
         }
         dialogueCoroutine = StartCoroutine(DisplaySentences());
+    }
+
+    void Update()
+    {
+        if (isPlaying)
+        {
+            ExerciseInteractionBlocker.SetActive(true);
+        }
+        else
+        {
+            ExerciseInteractionBlocker.SetActive(false);
+        }
     }
 
     IEnumerator DisplaySentences()

@@ -3903,7 +3903,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 767884867}
   m_Father: {fileID: 2117145164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9333,7 +9334,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767884866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9344,11 +9345,11 @@ RectTransform:
   - {fileID: 321317032}
   - {fileID: 2035880491}
   - {fileID: 1784188816}
-  m_Father: {fileID: 1085852059}
+  m_Father: {fileID: 282201909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -100, y: 30}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &770161290 stripped
@@ -10870,7 +10871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &872229896
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10883,12 +10884,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1085852059}
+  m_Father: {fileID: 2117145164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 100, y: -30}
-  m_SizeDelta: {x: 200, y: 60}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872229897
 MonoBehaviour:
@@ -10903,7 +10904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.2603773, g: 0.25693834, b: 0.25693834, a: 0.72156864}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12386,12 +12387,10 @@ RectTransform:
   - {fileID: 883869774}
   - {fileID: 1427749045}
   - {fileID: 1380096764}
-  - {fileID: 767884867}
   - {fileID: 1291382809}
   - {fileID: 1426471126}
   - {fileID: 2059777891}
   - {fileID: 238714111}
-  - {fileID: 872229896}
   m_Father: {fileID: 2117145164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22469,6 +22468,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc2fa24d0d3872b4caed907defed3cb2, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 2
+  ExerciseInteractionBlocker: {fileID: 872229895}
   replayButton: {fileID: 1505370020}
 --- !u!82 &1896349264
 AudioSource:
@@ -24739,6 +24739,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1085852059}
+  - {fileID: 872229896}
   - {fileID: 282201909}
   - {fileID: 1630748949}
   - {fileID: 81231384}
