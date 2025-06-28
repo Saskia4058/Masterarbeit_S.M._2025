@@ -12,20 +12,8 @@ public class ButtonControllerEndscreen : MonoBehaviour
 
     private void Start()
     {
-        // AudioSource vom GameObject holen
         audioSource = GetComponent<AudioSource>();
 
-        // Prüfen, ob die Buttons korrekt zugewiesen sind
-        if (ButtonReplay == null || ButtonExit == null)
-        {
-            Debug.LogError("Ein oder beide Buttons wurden nicht zugewiesen!");
-        }
-        else
-        {
-            Debug.Log("Buttons sind korrekt zugewiesen.");
-        }
-
-        // Button Event Listener hinzufügen
         ButtonReplay.onClick.AddListener(() => ResetScoreAndLoadScene("Startscreen"));
         ButtonExit.onClick.AddListener(() => PlayClickSoundAndExitGame());
     }
@@ -58,7 +46,6 @@ public class ButtonControllerEndscreen : MonoBehaviour
         audioSource.PlayOneShot(clickSound);
         Debug.Log("Sound wird abgespielt.");
 
-        // Szene nach kurzer Verzögerung laden
         Invoke(nameof(LoadPendingScene), clickSound.length);
     }
 
@@ -70,11 +57,8 @@ public class ButtonControllerEndscreen : MonoBehaviour
         audioSource.PlayOneShot(clickSound);
         Debug.Log("Sound wird abgespielt.");
 
-        // Spiel nach kurzer Verzögerung beenden
         Invoke(nameof(ExitGame), clickSound.length);
     }
-
-    // NEU: Score zurücksetzen und Szene laden
     private void ResetScoreAndLoadScene(string sceneName)
     {
         PlayerPrefs.SetInt("CurrentScore", 0);
