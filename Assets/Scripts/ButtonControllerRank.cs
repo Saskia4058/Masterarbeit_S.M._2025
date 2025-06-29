@@ -42,7 +42,7 @@ public class ButtonControllerRank : MonoBehaviour
         }
 
         // 🔸 2. Sound abspielen und danach Szene laden
-        PlayClickSoundAndLoadScene("Endscreen");
+        PlayClickSoundAndLoadScene("Leaderboard");
     }
 
     private void PlayClickSound()
@@ -77,6 +77,6 @@ public class ButtonControllerRank : MonoBehaviour
 
     private void LoadScene()
     {
-        SceneManager.LoadScene("Endscreen");
+        SceneManager.LoadScene("Leaderboard");
     }
 }

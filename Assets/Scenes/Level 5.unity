@@ -3563,7 +3563,7 @@ MonoBehaviour:
   m_text: 'Eidg. Berufsattest EBA
 
 
-    Berufliche Grundbildung EBA'
+    Berufliche Grundbildung (Lehre)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8185,7 +8185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Master PH\n\n\n\nBachelor PH\n\n\nP\xE4dagogische\nHochschulen"
+  m_text: "Master PH\n\n\n\nBachelor PH\n\n\nP\xE4dagogische\nHochschulen PH"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9043,7 +9043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Master UH\n\n\n\nBachelor UH\n\n\nUniversit\xE4ten\nETH"
+  m_text: "Master UH\n\n\n\nBachelor UH\n\n\nUniversit\xE4ten UH"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10899,7 +10899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Eidg. F\xE4higkeitszeugnis EFZ\n\n\n\nBerufliche Grundbildung EFZ"
+  m_text: "Eidg. F\xE4higkeitszeugnis EFZ\n\n\n\nBerufliche Grundbildung (Lehre)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11315,7 +11315,7 @@ MonoBehaviour:
 
 
 
-    Fachhochschulen'
+    Fachhochschulen FH'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16462,7 +16462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speechBubbleExplain: {fileID: 1784188815}
   multiSelectButtons: {fileID: 1032467435}
-  lineConnectorController: {fileID: 0}
+  lineConnectorController: {fileID: 2033076485}
   taskManager: {fileID: 652964172}
 --- !u!4 &1445924395
 Transform:
@@ -24167,8 +24167,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a07c3af35513b840851ece9cc5bc001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiSelectButtons: {fileID: 0}
-  connectors: []
+  multiSelectButtons: {fileID: 1032467435}
+  connectors:
+  - lineRenderer: {fileID: 821343195}
+    buttonA: {fileID: 1837643170}
+    buttonB: {fileID: 1927199448}
+  - lineRenderer: {fileID: 1840967750}
+    buttonA: {fileID: 1927199448}
+    buttonB: {fileID: 1135797143}
+  - lineRenderer: {fileID: 1670887674}
+    buttonA: {fileID: 1135797143}
+    buttonB: {fileID: 550051459}
   normalColor: {r: 0.8980392, g: 0.6039216, b: 0.2901961, a: 1}
   highlightedColor: {r: 1, g: 0.70980394, b: 0.4, a: 1}
 --- !u!4 &2033076486
@@ -25075,5 +25084,5 @@ SceneRoots:
   - {fileID: 2045097058}
   - {fileID: 732820596}
   - {fileID: 652964173}
-  - {fileID: 2033076486}
   - {fileID: 1445924395}
+  - {fileID: 2033076486}

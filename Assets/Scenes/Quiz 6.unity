@@ -5710,7 +5710,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 778f7ea31490dce4b9e16141646f5326, type: 3}
   - {fileID: 8300000, guid: 81fbbb4f61d714a4ea762db391efe0e5, type: 3}
   delayBetweenLetters: 0.05
-  delayBetweenSentences: 2
+  delayBetweenSentences: 3
   ExerciseInteractionBlocker: {fileID: 848510934}
   replayButton: {fileID: 1505370020}
 --- !u!1 &1909323288

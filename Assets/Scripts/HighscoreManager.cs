@@ -10,7 +10,7 @@ public class HighscoreManager : MonoBehaviour
     public TMP_InputField nameInputField;
     public Button buttonWeiter;  // 🔹 NEU: Referenz zum Button
 
-    [Header("Anzeige nur in Szene 'Endscreen'")]
+    [Header("Anzeige nur in Szene 'Leaderboard'")]
     public List<TextMeshProUGUI> entryTexts;
 
     private const int maxEntries = 5;
@@ -49,7 +49,7 @@ public class HighscoreManager : MonoBehaviour
             if (nameInputField != null)
                 nameInputField.onValueChanged.AddListener(delegate { CheckNameInput(); });
         }
-        else if (currentScene == "Endscreen")
+        else if (currentScene == "Leaderboard")
         {
             DisplayHighscores();
         }
