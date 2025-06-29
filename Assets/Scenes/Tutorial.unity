@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 58}
-  m_SizeDelta: {x: 1000, y: 600}
+  m_AnchoredPosition: {x: 0, y: -12}
+  m_SizeDelta: {x: 1300, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226289526
 MonoBehaviour:
@@ -659,7 +659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &970708269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -676,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -520}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970708270
@@ -864,8 +864,8 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
-  m_Url: https://raw.githubusercontent.com/Saskia4058/TutorialPathFiner/refs/heads/main/PathFinder-Tutorial.mp4
+  - 0.5
+  m_Url: https://raw.githubusercontent.com/Saskia4058/PathFinderTutorial/refs/heads/main/TutorialPathFinder.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -927,6 +927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonWeiter: {fileID: 970708270}
   clickSound: {fileID: 8300000, guid: 390a71113eba12749a33a43460ec6a56, type: 3}
+  videoPlayer: {fileID: 1241149558}
 --- !u!82 &1673876375
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,60 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class ButtonControllerTutorial : MonoBehaviour
 {
     public Button ButtonWeiter;
     public AudioClip clickSound;
+    public VideoPlayer videoPlayer;
+
     private AudioSource audioSource;
 
     private void Start()
     {
-        // AudioSource vom GameObject holen
         audioSource = GetComponent<AudioSource>();
 
-        // Prüfen, ob der Button korrekt zugewiesen ist
-        if (ButtonWeiter == null)
-        {
-            Debug.LogError("ButtonWeiter wurde nicht zugewiesen!");
-        }
-        else
-        {
-            Debug.Log("ButtonWeiter ist korrekt zugewiesen.");
-        }
+        ButtonWeiter.gameObject.SetActive(false);
+        videoPlayer.loopPointReached += OnVideoFinished;
 
-        // Button Event Listener hinzufügen
-        ButtonWeiter.onClick.AddListener(() => PlayClickSoundAndLoadScene("Rank"));
+        ButtonWeiter.onClick.AddListener(() => PlayClickSoundAndLoadScene());
     }
 
-    private void PlayClickSound()
+    private void OnVideoFinished(VideoPlayer vp)
     {
-        Debug.Log("Button wurde geklickt.");
-
-        if (audioSource == null)
-        {
-            Debug.LogError("AudioSource ist NULL!");
-        }
-        else if (clickSound == null)
-        {
-            Debug.LogError("clickSound ist NULL!");
-        }
-        else
-        {
-            Debug.Log($"Sound wird abgespielt. Volume: {audioSource.volume}");
-            audioSource.PlayOneShot(clickSound);
-        }
+        ButtonWeiter.gameObject.SetActive(true);
     }
 
-    private void PlayClickSoundAndLoadScene(string sceneName)
+    private void PlayClickSoundAndLoadScene()
     {
-        if (audioSource == null || clickSound == null)
-            return;
-
         audioSource.PlayOneShot(clickSound);
-        Debug.Log("Sound wird abgespielt.");
-
-        // Szene nach kurzer Verzögerung laden, um Sound abzuspielen
         Invoke(nameof(LoadScene), clickSound.length);
     }
 
