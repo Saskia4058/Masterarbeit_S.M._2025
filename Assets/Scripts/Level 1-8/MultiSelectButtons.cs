@@ -128,6 +128,9 @@ public class MultiSelectButtons : MonoBehaviour
             StopCoroutine(nextButtonHideCoroutine);
         }
         nextButtonHideCoroutine = StartCoroutine(DisableNextButtonAfterDelay(2f));
+
+        // === NEU: SpeechInteractionBlocker aktivieren, wenn SpeechBubbleExercise deaktiviert wurde
+        StartCoroutine(EnableSpeechBlockerIfExerciseInactive());
     }
 
     private IEnumerator DisableNextButtonAfterDelay(float delay)
@@ -140,5 +143,23 @@ public class MultiSelectButtons : MonoBehaviour
         }
 
         nextButtonHideCoroutine = null;
+    }
+
+    // === NEU: SpeechInteractionBlocker aktivieren, wenn SpeechBubbleExercise deaktiviert wurde ===
+    [Header("Speech Bubble / InteractionBlocker")]
+    public GameObject speechBubbleExercise;
+    public GameObject speechInteractionBlocker;
+
+    private IEnumerator EnableSpeechBlockerIfExerciseInactive()
+    {
+        yield return new WaitForEndOfFrame(); // Warten bis andere Scripte SetActive(false) aufrufen
+
+        if (speechBubbleExercise != null && !speechBubbleExercise.activeSelf)
+        {
+            if (speechInteractionBlocker != null)
+            {
+                speechInteractionBlocker.SetActive(true);
+            }
+        }
     }
 }
