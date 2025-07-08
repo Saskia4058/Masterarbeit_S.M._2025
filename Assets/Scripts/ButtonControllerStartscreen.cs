@@ -11,6 +11,8 @@ public class ButtonControllerStartscreen : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         // AudioSource vom GameObject holen
         audioSource = GetComponent<AudioSource>();
 
