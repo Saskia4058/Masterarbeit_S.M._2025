@@ -28,6 +28,10 @@ public class DialogueController : MonoBehaviour
 
     private AudioSource audioSource;
 
+    [Header("Klickgeräusch")]
+    public AudioClip clickSound;                      // Das Klickgeräusch bei Replay-Button
+    public AudioSource clickAudioSource;              // Separate AudioSource für Klicksound
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -152,9 +156,19 @@ public class DialogueController : MonoBehaviour
 
     private void OnReplayButtonClicked()
     {
+        PlayClickSound(); // <--- Klickgeräusch abspielen
+
         if (!isPlaying)
         {
             ReplayDialogue();
+        }
+    }
+
+    private void PlayClickSound()
+    {
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound);
         }
     }
 }
