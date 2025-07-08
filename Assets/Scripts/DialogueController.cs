@@ -13,7 +13,7 @@ public class DialogueController : MonoBehaviour
 
     [TextArea(3, 10)]
     public string[] sentences;
-    public AudioClip[] audioClips; 
+    public AudioClip[] audioClips; // Audio pro Satz
 
     public float delayBetweenLetters = 0.05f;
     public float delayBetweenSentences = 1.5f;
@@ -32,8 +32,8 @@ public class DialogueController : MonoBehaviour
     private AudioSource audioSource;
 
     [Header("Klickgeräusch")]
-    public AudioClip clickSound;                     
-    public AudioSource clickAudioSource;             
+    public AudioClip clickSound;             // Klicksound für Replay-Button
+    public AudioSource clickAudioSource;     // Eigene AudioSource für Klick
 
     void Start()
     {
@@ -44,6 +44,7 @@ public class DialogueController : MonoBehaviour
             replayButton.gameObject.SetActive(false);
             replayButton.onClick.AddListener(OnReplayButtonClicked);
         }
+
         dialogueCoroutine = StartCoroutine(DisplaySentences());
     }
 
@@ -163,7 +164,7 @@ public class DialogueController : MonoBehaviour
 
         if (!isPlaying)
         {
-            ReplayDialogue();
+            StartCoroutine(DelayedReplayStart());
         }
     }
 
@@ -173,5 +174,11 @@ public class DialogueController : MonoBehaviour
         {
             clickAudioSource.PlayOneShot(clickSound);
         }
+    }
+
+    private IEnumerator DelayedReplayStart()
+    {
+        yield return new WaitForSeconds(3f);
+        ReplayDialogue();
     }
 }
