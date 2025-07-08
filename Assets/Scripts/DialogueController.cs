@@ -1,3 +1,6 @@
+
+//Script wurde mit Hilfe von ChatGPT erstellt
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +13,7 @@ public class DialogueController : MonoBehaviour
 
     [TextArea(3, 10)]
     public string[] sentences;
-    public AudioClip[] audioClips; // <--- NEU: Array mit AudioClips (pro Satz)
+    public AudioClip[] audioClips; 
 
     public float delayBetweenLetters = 0.05f;
     public float delayBetweenSentences = 1.5f;
@@ -29,8 +32,8 @@ public class DialogueController : MonoBehaviour
     private AudioSource audioSource;
 
     [Header("Klickgeräusch")]
-    public AudioClip clickSound;                      // Das Klickgeräusch bei Replay-Button
-    public AudioSource clickAudioSource;              // Separate AudioSource für Klicksound
+    public AudioClip clickSound;                     
+    public AudioSource clickAudioSource;             
 
     void Start()
     {
@@ -63,7 +66,7 @@ public class DialogueController : MonoBehaviour
 
         while (currentSentenceIndex < sentences.Length)
         {
-            PlayAudioForSentence(currentSentenceIndex); // <-- NEU: passenden Clip starten
+            PlayAudioForSentence(currentSentenceIndex);
             yield return StartCoroutine(TypeSentence(sentences[currentSentenceIndex]));
             yield return new WaitForSeconds(delayBetweenSentences);
             currentSentenceIndex++;
@@ -98,7 +101,7 @@ public class DialogueController : MonoBehaviour
 
         if (audioSource != null)
         {
-            audioSource.Stop(); // <-- NEU: Audio stoppen beim Replay
+            audioSource.Stop();
         }
 
         currentSentenceIndex = 0;
@@ -156,7 +159,7 @@ public class DialogueController : MonoBehaviour
 
     private void OnReplayButtonClicked()
     {
-        PlayClickSound(); // <--- Klickgeräusch abspielen
+        PlayClickSound();
 
         if (!isPlaying)
         {
