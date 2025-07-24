@@ -1,3 +1,6 @@
+// Urheber Soundeffekt (Klickgeräusch):
+// Sound Effect by <a href="https://pixabay.com/de/users/u_8g40a9z0la-45586904/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=234708">u_8g40a9z0la</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=234708">Pixabay</a> 
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -163,16 +166,12 @@ public class SpeechBubbleTrue : MonoBehaviour
 
     private void PlayClickSound()
     {
-        Debug.Log("PlayClickSound wurde abgerufen.");
 
         if (clickAudioSource != null && clickSound != null)
         {
             clickAudioSource.PlayOneShot(clickSound, 0.5f);
         }
-        else
-        {
-            Debug.LogWarning("ClickSound oder ClickAudioSource fehlt!");
-        }
+
     }
 
     void OnDisable()
