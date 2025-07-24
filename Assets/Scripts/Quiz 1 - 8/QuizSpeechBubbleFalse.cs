@@ -35,9 +35,9 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
     [Header("Andere Speech Bubble")]
     public GameObject speechBubbleExercise;
 
-    [Header("Klickgeräusch Einstellungen")] // NEU
-    public AudioSource clickAudioSource;     // NEU
-    public AudioClip clickSound;             // NEU
+    [Header("Klickgeräusch Einstellungen")]
+    public AudioSource clickAudioSource;     
+    public AudioClip clickSound;             
 
     void Start()
     {
@@ -57,7 +57,7 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         if (weiterButton != null)
         {
             weiterButton.gameObject.SetActive(false);
-            weiterButton.onClick.AddListener(OnWeiterButtonClickedWithSound); // NEU: andere Methode mit Sound
+            weiterButton.onClick.AddListener(OnWeiterButtonClickedWithSound); 
         }
 
         if (speechBubbleExplain != null)
@@ -145,17 +145,15 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         }
     }
 
-    // NEU: Aufruf mit Klickgeräusch und Verzögerung
-    private void OnWeiterButtonClickedWithSound() // NEU
+    private void OnWeiterButtonClickedWithSound()
     {
         StartCoroutine(HandleWeiterButtonClick());
     }
 
-    // NEU: Coroutine, die erst Klicksound abspielt, dann Szene lädt
-    private IEnumerator HandleWeiterButtonClick() // NEU
+    private IEnumerator HandleWeiterButtonClick()
     {
-        PlayClickSound(); // Klicksound abspielen
-        yield return new WaitForSeconds(0.3f); // kurze Verzögerung
+        PlayClickSound(); 
+        yield return new WaitForSeconds(0.2f);
 
         string nextScene = GetNextSceneName();
         if (!string.IsNullOrEmpty(nextScene))
@@ -164,8 +162,7 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         }
     }
 
-    // NEU: Klicksound-Funktion
-    private void PlayClickSound() // NEU
+    private void PlayClickSound() 
     {
         if (clickAudioSource != null && clickSound != null)
         {
@@ -173,7 +170,6 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         }
     }
 
-    // Szenenwechsel-Logik
     private string GetNextSceneName()
     {
         string currentScene = SceneManager.GetActiveScene().name;

@@ -1,3 +1,6 @@
+// Urheber Soundeffekt (Klickgeräusch):
+// Sound Effect by <a href="https://pixabay.com/de/users/u_8g40a9z0la-45586904/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=234708">u_8g40a9z0la</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=234708">Pixabay</a> 
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,6 +35,10 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
     [Header("Andere Speech Bubble")]
     public GameObject speechBubbleExercise;
 
+    [Header("Klickgeräusch Einstellungen")]
+    public AudioSource clickAudioSource;     
+    public AudioClip clickSound;             
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -50,7 +57,7 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
         if (weiterButton != null)
         {
             weiterButton.gameObject.SetActive(false);
-            weiterButton.onClick.AddListener(OnWeiterButtonClicked);
+            weiterButton.onClick.AddListener(OnWeiterButtonClickedWithSound); 
         }
 
         if (speechBubbleExplain != null)
@@ -138,8 +145,16 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
         }
     }
 
-    private void OnWeiterButtonClicked()
+    private void OnWeiterButtonClickedWithSound() 
     {
+        StartCoroutine(HandleWeiterButtonClick());
+    }
+
+    private IEnumerator HandleWeiterButtonClick() 
+    {
+        PlayClickSound();
+        yield return new WaitForSeconds(0.2f);
+
         string nextScene = GetNextSceneName();
         if (!string.IsNullOrEmpty(nextScene))
         {
@@ -151,9 +166,14 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Gibt den Namen der nächsten Szene zurück basierend auf dem aktuellen Szenennamen.
-    /// </summary>
+    private void PlayClickSound() 
+    {
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound, 0.5f);
+        }
+    }
+
     private string GetNextSceneName()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -167,7 +187,7 @@ public class QuizSpeechBubbleTrue : MonoBehaviour
             case "Quiz 5": return "Quiz 6";
             case "Quiz 6": return "Quiz 7";
             case "Quiz 7": return "Quiz 8";
-            case "Quiz 8": return "Rank"; // Abschluss-Szene
+            case "Quiz 8": return "Rank";
             default: return "";
         }
     }
