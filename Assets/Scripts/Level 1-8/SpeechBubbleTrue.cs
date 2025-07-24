@@ -39,13 +39,6 @@ public class SpeechBubbleTrue : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
-        // Test: Spielt Klickgeräusch beim Start ab (optional zum Debuggen)
-        if (clickAudioSource != null && clickSound != null)
-        {
-            Debug.Log("Versuche Klicksound beim Start abzuspielen.");
-            clickAudioSource.PlayOneShot(clickSound);
-        }
-
         // Andere SpeechBubble deaktivieren (z. B. SpeechBubbleExercise)
         if (speechBubbleExercise != null)
         {
@@ -174,7 +167,7 @@ public class SpeechBubbleTrue : MonoBehaviour
 
         if (clickAudioSource != null && clickSound != null)
         {
-            clickAudioSource.PlayOneShot(clickSound);
+            clickAudioSource.PlayOneShot(clickSound, 0.5f);
         }
         else
         {
