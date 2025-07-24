@@ -8124,7 +8124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: '
+  m_text: 'Punkte: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b8cc1cdb2e6f7c41a15c7ce432e097a, type: 2}
   m_sharedMaterial: {fileID: -2632396687924886003, guid: 8b8cc1cdb2e6f7c41a15c7ce432e097a,

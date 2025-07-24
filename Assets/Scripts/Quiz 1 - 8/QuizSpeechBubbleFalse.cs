@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
-using UnityEngine.SceneManagement; // <-- NEU hinzugefügt
+using UnityEngine.SceneManagement;
 
 public class QuizSpeechBubbleFalse : MonoBehaviour
 {
@@ -32,6 +32,10 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
     [Header("Andere Speech Bubble")]
     public GameObject speechBubbleExercise;
 
+    [Header("Klickgeräusch Einstellungen")] // NEU
+    public AudioSource clickAudioSource;     // NEU
+    public AudioClip clickSound;             // NEU
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -50,7 +54,7 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         if (weiterButton != null)
         {
             weiterButton.gameObject.SetActive(false);
-            weiterButton.onClick.AddListener(OnWeiterButtonClicked);
+            weiterButton.onClick.AddListener(OnWeiterButtonClickedWithSound); // NEU: andere Methode mit Sound
         }
 
         if (speechBubbleExplain != null)
@@ -138,20 +142,35 @@ public class QuizSpeechBubbleFalse : MonoBehaviour
         }
     }
 
-    private void OnWeiterButtonClicked()
+    // NEU: Aufruf mit Klickgeräusch und Verzögerung
+    private void OnWeiterButtonClickedWithSound() // NEU
     {
+        StartCoroutine(HandleWeiterButtonClick());
+    }
+
+    // NEU: Coroutine, die erst Klicksound abspielt, dann Szene lädt
+    private IEnumerator HandleWeiterButtonClick() // NEU
+    {
+        PlayClickSound(); // Klicksound abspielen
+        yield return new WaitForSeconds(0.3f); // kurze Verzögerung
+
         string nextScene = GetNextSceneName();
         if (!string.IsNullOrEmpty(nextScene))
         {
             SceneManager.LoadScene(nextScene);
         }
-        else
+    }
+
+    // NEU: Klicksound-Funktion
+    private void PlayClickSound() // NEU
+    {
+        if (clickAudioSource != null && clickSound != null)
         {
-            Debug.LogWarning("Keine nächste Szene definiert für: " + SceneManager.GetActiveScene().name);
+            clickAudioSource.PlayOneShot(clickSound, 0.5f);
         }
     }
 
-    // NEU: Automatische Szenenwechsel-Logik
+    // Szenenwechsel-Logik
     private string GetNextSceneName()
     {
         string currentScene = SceneManager.GetActiveScene().name;
