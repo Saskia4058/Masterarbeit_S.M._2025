@@ -28,24 +28,33 @@ public class SpeechBubbleTrue : MonoBehaviour
 
     private AudioSource audioSource;
 
-    [Header("Andere Speech Bubble")] // <-- NEU
-    public GameObject speechBubbleExercise; // <-- NEU: andere Bubble, die deaktiviert werden soll
+    [Header("Andere Speech Bubble")]
+    public GameObject speechBubbleExercise;
+
+    [Header("Klickgeräusch Einstellungen")] // NEU
+    public AudioSource clickAudioSource;     // NEU
+    public AudioClip clickSound;             // NEU
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
+        // Test: Spielt Klickgeräusch beim Start ab (optional zum Debuggen)
+        if (clickAudioSource != null && clickSound != null)
+        {
+            Debug.Log("Versuche Klicksound beim Start abzuspielen.");
+            clickAudioSource.PlayOneShot(clickSound);
+        }
+
         // Andere SpeechBubble deaktivieren (z. B. SpeechBubbleExercise)
         if (speechBubbleExercise != null)
         {
-            // Audio stoppen, wenn AudioSource vorhanden
             AudioSource otherAudio = speechBubbleExercise.GetComponent<AudioSource>();
             if (otherAudio != null && otherAudio.isPlaying)
             {
                 otherAudio.Stop();
             }
-
-            speechBubbleExercise.SetActive(false); // Bubble deaktivieren
+            speechBubbleExercise.SetActive(false);
         }
 
         if (weiterButton != null)
@@ -139,17 +148,41 @@ public class SpeechBubbleTrue : MonoBehaviour
         }
     }
 
-    private void OnWeiterButtonClicked()
+    // Wird vom Button im onClick() aufgerufen
+    public void OnWeiterButtonClicked()
     {
+        StartCoroutine(HandleWeiterButtonClick());
+    }
+
+    // Coroutine mit Verzögerung, damit Klicksound hörbar bleibt
+    private IEnumerator HandleWeiterButtonClick()
+    {
+        PlayClickSound(); // Klicksound starten
+        yield return new WaitForSeconds(0.3f); // Zeit zum Abspielen lassen
+
         if (speechBubbleExplain != null)
         {
             speechBubbleExplain.SetActive(true);
         }
 
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(false); // Jetzt erst deaktivieren
     }
 
-    void OnDisable() // Sicherheit: Audio stoppen, wenn Bubble deaktiviert wird
+    private void PlayClickSound()
+    {
+        Debug.Log("PlayClickSound wurde abgerufen.");
+
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound);
+        }
+        else
+        {
+            Debug.LogWarning("ClickSound oder ClickAudioSource fehlt!");
+        }
+    }
+
+    void OnDisable()
     {
         if (audioSource != null)
         {

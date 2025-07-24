@@ -5650,8 +5650,8 @@ MonoBehaviour:
   dialogText: {fileID: 1988665652}
   sentences:
   - "2. Frage: Wof\xFCr steht die Abk\xFCrzung EBA?"
-  - A) Eidg. Berufsattest
-  - "B) Fachmaturit\xE4t"
+  - "A) Fachmaturit\xE4t"
+  - 'B) Eidg. Berufsattest '
   - "C) Eidg. F\xE4higkeitszeugnis"
   - "D) Berufsmaturit\xE4t"
   audioClips:
