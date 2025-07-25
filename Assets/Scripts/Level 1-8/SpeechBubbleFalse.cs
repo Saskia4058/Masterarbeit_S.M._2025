@@ -47,7 +47,7 @@ public class SpeechBubbleFalse : MonoBehaviour
 
         if (clickAudioSource != null && clickSound != null)
         {
-            clickAudioSource.PlayOneShot(clickSound); // Test: sollte beim Start spielen
+            clickAudioSource.PlayOneShot(clickSound);
         }
 
         if (speechBubbleExercise != null)

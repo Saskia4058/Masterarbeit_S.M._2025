@@ -29,30 +29,32 @@ public class SpeechBubbleExplain : MonoBehaviour
 
     private AudioSource audioSource;
 
-    [Header("Andere Speech Bubble")] // <-- NEU
-    public GameObject speechBubbleExercise; // <-- NEU: andere Bubble, die deaktiviert werden soll
+    [Header("Andere Speech Bubble")]
+    public GameObject speechBubbleExercise;
+
+    [Header("Klickgeräusch")] // <-- NEU (aus SpeechBubbleFalse)
+    public AudioSource clickAudioSource; // <-- NEU
+    public AudioClip clickSound; // <-- NEU
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        // Andere SpeechBubble deaktivieren (z. B. SpeechBubbleExercise)
         if (speechBubbleExercise != null)
         {
-            // Audio stoppen, wenn AudioSource vorhanden
             AudioSource otherAudio = speechBubbleExercise.GetComponent<AudioSource>();
             if (otherAudio != null && otherAudio.isPlaying)
             {
                 otherAudio.Stop();
             }
 
-            speechBubbleExercise.SetActive(false); // Bubble deaktivieren
+            speechBubbleExercise.SetActive(false);
         }
 
         if (weiterButton != null)
         {
             weiterButton.gameObject.SetActive(false);
-            weiterButton.onClick.AddListener(OnWeiterButtonClicked);
+            weiterButton.onClick.AddListener(() => StartCoroutine(DelayedWeiterStart())); // <-- NEU
         }
 
         if (speechBubbleExplain != null)
@@ -148,7 +150,18 @@ public class SpeechBubbleExplain : MonoBehaviour
         }
 
         this.gameObject.SetActive(false);
-        LoadNextScene(); // Neue Funktion aufrufen
+        LoadNextScene();
+    }
+
+    private IEnumerator DelayedWeiterStart() // <-- NEU (aus SpeechBubbleFalse)
+    {
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound);
+        }
+
+        yield return new WaitForSeconds(0.3f);
+        OnWeiterButtonClicked();
     }
 
     private void LoadNextScene()
@@ -173,12 +186,12 @@ public class SpeechBubbleExplain : MonoBehaviour
             case "Level 5": return "Level 6";
             case "Level 6": return "Level 7";
             case "Level 7": return "Level 8";
-            case "Level 8": return "Quiz 5"; // Abschluss-Szene
+            case "Level 8": return "Quiz 5";
             default: return "";
         }
     }
 
-    void OnDisable() // Sicherheit: Audio stoppen, wenn Bubble deaktiviert wird
+    void OnDisable()
     {
         if (audioSource != null)
         {
