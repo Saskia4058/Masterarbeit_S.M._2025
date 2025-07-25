@@ -9432,6 +9432,7 @@ GameObject:
   - component: {fileID: 832916206}
   - component: {fileID: 832916208}
   - component: {fileID: 832916207}
+  - component: {fileID: 832916209}
   m_Layer: 5
   m_Name: SpeechBubbleFalse2
   m_TagString: Untagged
@@ -9477,12 +9478,16 @@ MonoBehaviour:
   sentences:
   - Deine Auswahl ist immer noch nicht ganz richtig.
   - "Hier die L\xF6sung."
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 5bfcfb087ce7e9743b1eed97c1537e43, type: 3}
+  - {fileID: 8300000, guid: ab48cd63f3587fc47b3379688bb833bc, type: 3}
   delayBetweenLetters: 0.05
   delayBetweenSentences: 1.5
   weiterButton: {fileID: 1376521462}
   speechBubbleExplain: {fileID: 1784188815}
   speechBubbleExercise: {fileID: 1896349261}
+  clickAudioSource: {fileID: 832916209}
+  clickSound: {fileID: 8300000, guid: 390a71113eba12749a33a43460ec6a56, type: 3}
 --- !u!82 &832916208
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9498,6 +9503,103 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &832916209
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832916205}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 390a71113eba12749a33a43460ec6a56, type: 3}
+  m_Resource: {fileID: 8300000, guid: 390a71113eba12749a33a43460ec6a56, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0

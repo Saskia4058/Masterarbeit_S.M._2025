@@ -13,7 +13,7 @@ public class DialogueController : MonoBehaviour
 
     [TextArea(3, 10)]
     public string[] sentences;
-    public AudioClip[] audioClips; // Audio pro Satz
+    public AudioClip[] audioClips;
 
     public float delayBetweenLetters = 0.05f;
     public float delayBetweenSentences = 1.5f;
@@ -32,8 +32,8 @@ public class DialogueController : MonoBehaviour
     private AudioSource audioSource;
 
     [Header("Klickgeräusch")]
-    public AudioClip clickSound;             // Klicksound für Replay-Button
-    public AudioSource clickAudioSource;     // Eigene AudioSource für Klick
+    public AudioClip clickSound;            
+    public AudioSource clickAudioSource;    
 
     void Start()
     {
