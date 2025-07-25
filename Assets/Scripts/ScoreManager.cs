@@ -1,3 +1,9 @@
+// Urheber Soundeffekt (Fail):
+// Sound Effect by u_8g40a9z0la from Pixabay unter https://pixabay.com/de/sound-effects/fail-234710/
+
+// Urheber Soundeffekt (Win):
+// Sound Effect by freesound_community from Pixabay unter https://pixabay.com/de/sound-effects/success-bell-6776/
+
 using UnityEngine;
 using TMPro;
 
@@ -5,7 +11,7 @@ public class ScoreManager : MonoBehaviour
 {
     public GameObject speechBubbleTrue;
     public GameObject speechBubbleFalse;
-    public GameObject speechBubbleFalse2;      // Optional – wird mit null geprüft
+    public GameObject speechBubbleFalse2;     
 
     public TextMeshProUGUI scoreText;
     public AudioSource pointSound;
@@ -25,7 +31,7 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        // Punkte nur einmal vergeben bei Aktivierung
+    
         if (speechBubbleTrue.activeSelf && !hasScored)
         {
             AddPoint();
@@ -37,7 +43,6 @@ public class ScoreManager : MonoBehaviour
             hasScored = false;
         }
 
-        // Sound für speechBubbleFalse
         if (speechBubbleFalse.activeSelf && !hasPlayedFalse1)
         {
             PlayFalseSound();
@@ -48,7 +53,6 @@ public class ScoreManager : MonoBehaviour
             hasPlayedFalse1 = false;
         }
 
-        // Sound für speechBubbleFalse2 – nur wenn vorhanden
         if (speechBubbleFalse2 != null)
         {
             if (speechBubbleFalse2.activeSelf && !hasPlayedFalse2)

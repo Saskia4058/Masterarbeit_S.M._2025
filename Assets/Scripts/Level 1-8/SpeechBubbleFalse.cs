@@ -34,9 +34,18 @@ public class SpeechBubbleFalse : MonoBehaviour
     [Header("Andere Speech Bubble")]
     public GameObject speechBubbleExercise;
 
+    [Header("Klickgeräusch")]
+    public AudioSource clickAudioSource;
+    public AudioClip clickSound;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound); // Test: sollte beim Start spielen
+        }
 
         if (speechBubbleExercise != null)
         {
@@ -52,13 +61,13 @@ public class SpeechBubbleFalse : MonoBehaviour
         if (buttonYes != null)
         {
             buttonYes.gameObject.SetActive(false);
-            buttonYes.onClick.AddListener(OnButtonYesClicked);
+            buttonYes.onClick.AddListener(() => StartCoroutine(DelayedYesStart()));
         }
 
         if (buttonNo != null)
         {
             buttonNo.gameObject.SetActive(false);
-            buttonNo.onClick.AddListener(OnButtonNoClicked);
+            buttonNo.onClick.AddListener(() => StartCoroutine(DelayedNoStart()));
         }
 
         if (speechBubbleExplain != null)
@@ -172,8 +181,15 @@ public class SpeechBubbleFalse : MonoBehaviour
         }
     }
 
-    private void OnButtonYesClicked()
+    private IEnumerator DelayedYesStart()
     {
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound);
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
         if (speechBubbleExplain != null)
         {
             speechBubbleExplain.SetActive(true);
@@ -182,8 +198,15 @@ public class SpeechBubbleFalse : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    private void OnButtonNoClicked()
+    private IEnumerator DelayedNoStart()
     {
+        if (clickAudioSource != null && clickSound != null)
+        {
+            clickAudioSource.PlayOneShot(clickSound);
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
         if (speechBubbleFalse != null)
         {
             speechBubbleFalse.SetActive(false);
