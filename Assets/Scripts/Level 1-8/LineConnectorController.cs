@@ -17,8 +17,8 @@ public class LineConnectorController : MonoBehaviour
 
     public List<LineConnector> connectors = new List<LineConnector>();
 
-    public Color normalColor = new Color32(0xE5, 0x9A, 0x4A, 0xFF); // E59A4A
-    public Color highlightedColor = new Color32(0xFF, 0xB5, 0x66, 0xFF); // FFB566
+    public Color normalColor = new Color32(0xE5, 0x9A, 0x4A, 0xFF); 
+    public Color highlightedColor = new Color32(0xFF, 0xB5, 0x66, 0xFF); 
 
     private void Start()
     {

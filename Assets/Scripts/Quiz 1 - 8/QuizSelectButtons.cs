@@ -31,7 +31,6 @@ public class QuizSelectButtons : MonoBehaviour
         "ButtonAnswer1", "ButtonAnswer2", "ButtonAnswer3", "ButtonAnswer4"
     };
 
-    // === NEU: Event für andere Scripte ===
     public delegate void ButtonSelectionChanged();
     public event ButtonSelectionChanged OnButtonSelectionChanged;
 
@@ -46,7 +45,6 @@ public class QuizSelectButtons : MonoBehaviour
             ApplyColorState(b.button, b.normalColor, b.highlightedColor);
         }
 
-        // === NEU: Listener für ButtonNext hinzufügen ===
         if (buttonNext != null)
         {
             buttonNext.onClick.AddListener(OnNextButtonClicked);
@@ -63,21 +61,17 @@ public class QuizSelectButtons : MonoBehaviour
         var buttonData = buttons.Find(b => b.button == button);
         if (buttonData == null) return;
 
-        // Deselektiere den aktuell ausgewählten Button (falls vorhanden)
         if (selectedButton != null && selectedButton != button)
         {
             var previousButtonData = buttons.Find(b => b.button == selectedButton);
             ApplyColorState(selectedButton, previousButtonData.normalColor, previousButtonData.highlightedColor);
         }
 
-        // Setze den neuen ausgewählten Button
         selectedButton = button;
         ApplyColorState(button, buttonData.selectedColor, buttonData.highlightedColor);
 
-        // === NEU: Event auslösen ===
         OnButtonSelectionChanged?.Invoke();
 
-        // Sichtbarkeit vom ButtonNext steuern
         if (triggerButtonNames.Contains(button.name))
         {
             buttonNext.gameObject.SetActive(true);
@@ -91,11 +85,10 @@ public class QuizSelectButtons : MonoBehaviour
         colors.highlightedColor = highlightedColor;
         colors.pressedColor = baseColor;
         colors.selectedColor = baseColor;
-        colors.disabledColor = new Color(baseColor.r * 0.5f, baseColor.g * 0.5f, baseColor.b * 0.5f, 0.5f); // Optional
+        colors.disabledColor = new Color(baseColor.r * 0.5f, baseColor.g * 0.5f, baseColor.b * 0.5f, 0.5f);
         button.colors = colors;
     }
 
-    // === NEU: Öffentliche Abfrage, ob Button selektiert ist ===
     public bool IsButtonSelected(Button button)
     {
         return selectedButton == button;
@@ -106,7 +99,6 @@ public class QuizSelectButtons : MonoBehaviour
         return selectedButton;
     }
 
-    // === NEU: ButtonNext wird nach 2 Sekunden deaktiviert, nachdem er geklickt wurde ===
     private void OnNextButtonClicked()
     {
         if (nextButtonHideCoroutine != null)

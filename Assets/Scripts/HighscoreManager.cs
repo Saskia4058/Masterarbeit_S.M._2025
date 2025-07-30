@@ -8,7 +8,7 @@ public class HighscoreManager : MonoBehaviour
 {
     [Header("Eingabe nur in Szene 'Rank'")]
     public TMP_InputField nameInputField;
-    public Button buttonWeiter;  // 🔹 NEU: Referenz zum Button
+    public Button buttonWeiter; 
 
     [Header("Anzeige nur in Szene 'Leaderboard'")]
     public List<TextMeshProUGUI> entryTexts;
@@ -41,11 +41,10 @@ public class HighscoreManager : MonoBehaviour
 
         if (currentScene == "Rank")
         {
-            // 🔸 Button zu Beginn deaktiviert
+            
             if (buttonWeiter != null)
                 buttonWeiter.gameObject.SetActive(false);
 
-            // 🔸 Listener für InputField
             if (nameInputField != null)
                 nameInputField.onValueChanged.AddListener(delegate { CheckNameInput(); });
         }
@@ -55,9 +54,6 @@ public class HighscoreManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Überprüft den Text im Eingabefeld und aktiviert den Button, wenn etwas eingegeben wurde.
-    /// </summary>
     private void CheckNameInput()
     {
         if (buttonWeiter == null || nameInputField == null)
@@ -69,9 +65,6 @@ public class HighscoreManager : MonoBehaviour
         buttonWeiter.gameObject.SetActive(hasInput);
     }
 
-    /// <summary>
-    /// Wird von ButtonControllerRank aufgerufen – speichert aktuellen Score mit Namen
-    /// </summary>
     public void SaveCurrentScoreWithName()
     {
         string playerName = nameInputField != null ? nameInputField.text : "Spieler";
@@ -87,19 +80,15 @@ public class HighscoreManager : MonoBehaviour
     {
         HighscoreList highscoreList = LoadHighscores();
 
-        // Eintrag hinzufügen
         highscoreList.entries.Add(new HighscoreEntry(name, score));
 
-        // Sortieren (höchste Punktzahl zuerst)
         highscoreList.entries.Sort((a, b) => b.score.CompareTo(a.score));
 
-        // Nur Top 5 behalten
         if (highscoreList.entries.Count > maxEntries)
         {
             highscoreList.entries.RemoveRange(maxEntries, highscoreList.entries.Count - maxEntries);
         }
 
-        // Speichern
         string json = JsonUtility.ToJson(highscoreList);
         PlayerPrefs.SetString(highscoreKey, json);
         PlayerPrefs.Save();

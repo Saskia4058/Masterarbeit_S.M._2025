@@ -7,10 +7,10 @@ public class QuizSolutionRevealController : MonoBehaviour
     public GameObject speechBubbleTrue;
     public GameObject speechBubbleFalse;
     public QuizSelectButtons quizSelectButtons;
-    public GameObject taskManager; // Neu: GameObject mit dem Task-Script (im Inspector zuweisen)
+    public GameObject taskManager; 
 
     private bool solutionShown = false;
-    private static readonly Color solutionColor = new Color(253f / 255f, 255f / 255f, 0f); // Gelb
+    private static readonly Color solutionColor = new Color(253f / 255f, 255f / 255f, 0f);
 
     void Update()
     {
@@ -40,11 +40,10 @@ public class QuizSolutionRevealController : MonoBehaviour
             return;
         }
 
-        // 1. Buttons zurücksetzen & deaktivieren
         foreach (var buttonData in quizSelectButtons.buttons)
         {
             buttonData.button.interactable = false;
-            // Setze Farben auf normal (optional, damit nicht vorherige Farben bleiben)
+
             ColorBlock cb = buttonData.button.colors;
             cb.normalColor = buttonData.normalColor;
             cb.highlightedColor = buttonData.highlightedColor;
@@ -54,7 +53,6 @@ public class QuizSolutionRevealController : MonoBehaviour
             buttonData.button.colors = cb;
         }
 
-        // 2. Korrekte Buttons markieren
         ILevelTask task = taskManager.GetComponent<ILevelTask>();
         if (task == null)
         {

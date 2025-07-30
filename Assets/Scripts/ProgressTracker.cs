@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ProgressTracker : MonoBehaviour
 {
-    public Image progressBarFill; // Das "ProgressBarFill"-Image
-    public TextMeshProUGUI levelText; // Das "Levelanzeige"-Textfeld
+    public Image progressBarFill; 
+    public TextMeshProUGUI levelText; 
 
     private static ProgressTracker instance;
 
@@ -34,7 +34,6 @@ public class ProgressTracker : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Suche in der neu geladenen Szene nach den UI-Referenzen
         progressBarFill = GameObject.Find("ProgressBarFill")?.GetComponent<Image>();
         levelText = GameObject.Find("Levelanzeige")?.GetComponent<TextMeshProUGUI>();
 

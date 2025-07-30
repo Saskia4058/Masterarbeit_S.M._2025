@@ -7,10 +7,10 @@ public class SolutionRevealController : MonoBehaviour
     public GameObject speechBubbleExplain;
     public MultiSelectButtons multiSelectButtons;
     public LineConnectorController lineConnectorController;
-    public GameObject taskManager; // Neu: GameObject mit dem Task-Script (im Inspector zuweisen)
+    public GameObject taskManager;
 
     private bool solutionShown = false;
-    private static readonly Color solutionColor = new Color(253f / 255f, 255f / 255f, 0f); // Gelb
+    private static readonly Color solutionColor = new Color(253f / 255f, 255f / 255f, 0f); 
 
     void Update()
     {
@@ -35,11 +35,10 @@ public class SolutionRevealController : MonoBehaviour
             return;
         }
 
-        // 1. Buttons zurücksetzen & deaktivieren
         foreach (var buttonData in multiSelectButtons.buttons)
         {
             buttonData.button.interactable = false;
-            // Setze Farben auf normal (optional, damit nicht vorherige Farben bleiben)
+            
             ColorBlock cb = buttonData.button.colors;
             cb.normalColor = buttonData.normalColor;
             cb.highlightedColor = buttonData.highlightedColor;
@@ -49,7 +48,6 @@ public class SolutionRevealController : MonoBehaviour
             buttonData.button.colors = cb;
         }
 
-        // 2. Korrekte Buttons markieren
         ILevelTask task = taskManager.GetComponent<ILevelTask>();
         if (task == null)
         {
@@ -67,7 +65,6 @@ public class SolutionRevealController : MonoBehaviour
             }
         }
 
-        // 3. Verbindungen hervorheben
         if (lineConnectorController != null)
         {
             foreach (var connector in lineConnectorController.connectors)
@@ -81,7 +78,6 @@ public class SolutionRevealController : MonoBehaviour
                 }
                 else
                 {
-                    // Optional: Auf normale Farbe zurücksetzen
                     connector.lineRenderer.color = lineConnectorController.normalColor;
                 }
             }

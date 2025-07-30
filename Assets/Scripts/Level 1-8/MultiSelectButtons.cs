@@ -33,7 +33,6 @@ public class MultiSelectButtons : MonoBehaviour
         "ButtonKurs", "ButtonUNI", "ButtonPH", "ButtonFH", "ButtonCAS", "ButtonPHD"
     };
 
-    // === Event für andere Scripte ===
     public delegate void ButtonSelectionChanged();
     public event ButtonSelectionChanged OnButtonSelectionChanged;
 
@@ -77,7 +76,6 @@ public class MultiSelectButtons : MonoBehaviour
 
         OnButtonSelectionChanged?.Invoke();
 
-        // Sichtbarkeit vom ButtonNext steuern
         if (!buttonNext.gameObject.activeSelf && triggerButtonNames.Contains(button.name))
         {
             buttonNext.gameObject.SetActive(true);
@@ -120,7 +118,6 @@ public class MultiSelectButtons : MonoBehaviour
         return new List<Button>(selectedButtons);
     }
 
-    // === NEU: ButtonNext wird nach 2 Sekunden deaktiviert, nachdem er geklickt wurde ===
     private void OnNextButtonClicked()
     {
         if (nextButtonHideCoroutine != null)
@@ -129,7 +126,6 @@ public class MultiSelectButtons : MonoBehaviour
         }
         nextButtonHideCoroutine = StartCoroutine(DisableNextButtonAfterDelay(2f));
 
-        // === NEU: SpeechInteractionBlocker aktivieren, wenn SpeechBubbleExercise deaktiviert wurde
         StartCoroutine(EnableSpeechBlockerIfExerciseInactive());
     }
 
@@ -145,14 +141,13 @@ public class MultiSelectButtons : MonoBehaviour
         nextButtonHideCoroutine = null;
     }
 
-    // === NEU: SpeechInteractionBlocker aktivieren, wenn SpeechBubbleExercise deaktiviert wurde ===
     [Header("Speech Bubble / InteractionBlocker")]
     public GameObject speechBubbleExercise;
     public GameObject speechInteractionBlocker;
 
     private IEnumerator EnableSpeechBlockerIfExerciseInactive()
     {
-        yield return new WaitForEndOfFrame(); // Warten bis andere Scripte SetActive(false) aufrufen
+        yield return new WaitForEndOfFrame();
 
         if (speechBubbleExercise != null && !speechBubbleExercise.activeSelf)
         {
